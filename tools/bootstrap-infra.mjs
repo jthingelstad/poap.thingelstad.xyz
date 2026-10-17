@@ -47,6 +47,9 @@ async function stack(name) {
     const { Stacks } = await cfn.send(
       new DescribeStacksCommand({ StackName: name }),
     );
+    // A CREATE change set left by `plan` parks a new stack in REVIEW_IN_PROGRESS
+    // with no resources; it still takes a CREATE change set, never an UPDATE.
+    if (Stacks[0].StackStatus === 'REVIEW_IN_PROGRESS') return undefined;
     return Stacks[0];
   } catch (error) {
     if (/does not exist/.test(error.message)) return undefined;

@@ -25,7 +25,8 @@
     "test:ci-browser": "node tools/test-built-site.mjs",
     "deploy": "node tools/deploy.mjs",
     "infra:plan": "node tools/bootstrap-infra.mjs plan",
-    "infra:apply": "node tools/bootstrap-infra.mjs apply"
+    "infra:apply": "node tools/bootstrap-infra.mjs apply",
+    "infra:attach": "node tools/bootstrap-infra.mjs attach"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",

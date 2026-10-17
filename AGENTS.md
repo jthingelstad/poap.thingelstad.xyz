@@ -25,8 +25,9 @@ read it before changing structure, URLs or data.
   only, kudos per drop keyed on `/drops/<id>/`. Never send live hits or kudos from QA.
 - **Prose is content.** Chapter titles and quotes, series descriptions and the closing
   essay live in `content/` as Markdown, so a word change never touches code.
-- This repo is public. Never commit credentials, `.env` files, or anything from the
-  archive's `research/interactions-PRIVATE.md`.
+- This repo is public. Never commit credentials, `.env` files, or anything from Jamie's
+  private POAP notes (kept outside both repos, in `~/Projects/poap-archive-private/` and the
+  archive bucket's `private/` prefix).
 - Run `npm run lint`, `npm run format:check`, `npm run check`, `npm test`,
   `npm run validate:infra`, `npm run validate:data`, `npm run build`,
   `LOCAL_MEDIA=1 npm run validate:site` and `LOCAL_MEDIA=1 npm run test:ci-browser`

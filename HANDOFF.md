@@ -12,6 +12,21 @@ layout, home and about). `infra/deployment.json` has nulls for the distribution,
 certificate and role ARNs. `data/media.json` has no objects. The CI deployment job skips
 until the repository variable `AWS_DEPLOY_ROLE_ARN` exists.
 
+## Local preferences (Otto, Jamie's Mac)
+
+- Use Node 24, as `.nvmrc` and CI do: `export PATH="/opt/homebrew/opt/node@24/bin:$PATH"`.
+  The Mac's default `node` is newer.
+- Verify the identity before any mutation: `aws sts get-caller-identity --profile
+cloud-engineer` must show account `999153317627` and
+  `assumed-role/ProjectsCloudEngineer/projects-cloud-engineer`. Never the `jamie` profile.
+- Show Jamie the `infra:plan` change sets and wait for an explicit go before `infra:apply`
+  or `infra:attach`. Jamie's go names the action and target, e.g.
+  `Approved: npm run infra:apply for poap.thingelstad.xyz`.
+- Give Jamie DNS records formatted for Namecheap, hosts relative to `thingelstad.xyz`, and
+  times in US Central.
+- Checks never send live Tinylytics hits or kudos; browser checks against production block
+  the Tinylytics host.
+
 ## 1. Create the stacks and get the DNS records
 
 ```sh
@@ -28,6 +43,9 @@ cache and headers policies, index function, distribution, access log, 5xx alarm)
 ```sh
 AWS_PROFILE=cloud-engineer npm run infra:apply
 ```
+
+`plan` leaves each new stack in `REVIEW_IN_PROGRESS`; `apply` creates fresh CREATE change
+sets for those (fixed 2026-10-17, it used to ask for an UPDATE and fail).
 
 It executes the change sets in order, runs `poap-storage` again with the distribution id
 so the bucket policy admits CloudFront, rewrites `infra/deployment.json` from the live
