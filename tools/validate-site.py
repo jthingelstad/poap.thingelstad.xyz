@@ -55,12 +55,21 @@ def main():
         parser = Page()
         parser.feed(page.read_text())
         rel = page.relative_to(DIST).as_posix()
-        for flag, name in ((parser.title, "title"), (parser.canonical, "canonical"), (parser.main, "main")):
+        for flag, name in (
+            (parser.title, "title"),
+            (parser.canonical, "canonical"),
+            (parser.main, "main"),
+        ):
             if not flag:
                 problems.append(f"{rel}: no {name}")
         for ref in parser.refs:
             parts = urlsplit(ref)
-            if parts.scheme or ref.startswith("//") or ref.startswith("#") or ref.startswith("data:"):
+            if (
+                parts.scheme
+                or ref.startswith("//")
+                or ref.startswith("#")
+                or ref.startswith("data:")
+            ):
                 continue
             target = unquote(parts.path)
             if not target.startswith("/"):
@@ -81,7 +90,10 @@ def main():
         elif key not in published:
             problems.append(f"media not published: {key}")
     if problems:
-        sys.exit("\n".join(problems[:40]) + (f"\n... {len(problems)} problems" if len(problems) > 40 else ""))
+        sys.exit(
+            "\n".join(problems[:40])
+            + (f"\n... {len(problems)} problems" if len(problems) > 40 else "")
+        )
     print(f"{len(pages)} pages, {len(media_refs)} media references, links and metadata valid")
 
 
