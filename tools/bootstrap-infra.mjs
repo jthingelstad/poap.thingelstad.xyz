@@ -126,11 +126,15 @@ async function converge(name, file, parameters = {}, capabilities = []) {
 
 const { stacks } = config;
 const cert = outputs(await converge(stacks.certificate, 'certificate'));
+// Keep the distribution's grant on the site bucket once it exists; an empty
+// DistributionId here would cut CloudFront off until the second storage pass.
+const siteExisting = outputs(await stack(stacks.site));
 let storage = outputs(
-  await converge(stacks.storage, 'storage', { DistributionId: '' }),
+  await converge(stacks.storage, 'storage', {
+    DistributionId: siteExisting.DistributionId || '',
+  }),
 );
 const siteBucket = storage.SiteBucket || config.siteBucket;
-const siteExisting = outputs(await stack(stacks.site));
 const certificateArn =
   mode === 'attach' ? cert.CertificateArn : siteExisting.CertificateArn || '';
 let site = outputs(
