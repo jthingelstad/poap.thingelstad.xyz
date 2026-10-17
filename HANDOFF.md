@@ -47,6 +47,13 @@ AWS_PROFILE=cloud-engineer npm run infra:apply
 `plan` leaves each new stack in `REVIEW_IN_PROGRESS`; `apply` creates fresh CREATE change
 sets for those (fixed 2026-10-17, it used to ask for an UPDATE and fail).
 
+`poap-certificate` does not finish until the certificate is ISSUED, so `apply` stops at
+the first stack until the ACM validation CNAME is in DNS (the script waits 30 minutes).
+Read the record while it waits (`aws acm describe-certificate`, `DomainValidationOptions`)
+and give it to Jamie straight away. Run `apply` with a long enough timeout for the
+distribution too (allow 45 minutes); if it is cut off, running it again is safe, because
+finished stacks report no changes and it carries on from there.
+
 It executes the change sets in order, runs `poap-storage` again with the distribution id
 so the bucket policy admits CloudFront, rewrites `infra/deployment.json` from the live
 stacks, and prints two DNS records and the deployment role ARN. Commit
