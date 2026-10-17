@@ -1,7 +1,7 @@
 {
  "archive": "jthingelstad/poap-archive",
- "commit": "19602747e71f572b24a302a75e470956620c6662",
- "exported": "2026-10-17T13:49:33.814722+00:00",
+ "commit": "57e7da32398ffd5087df33ed94ee11f257eedcd8",
+ "exported": "2026-10-17T14:00:03.670538+00:00",
  "captured": "2026-10-17",
  "wallets": {
   "0x111accebf9d70d9c06de2d38f9392522e82ecf29": "poap.thingelstad.eth",
@@ -15,10 +15,9 @@
   "tokens_from_others": 130,
   "people": 639,
   "mints": 2072,
-  "events": 3052,
+  "events": 2786,
   "writing": 209,
   "advice": 25,
-  "moments": 266,
   "artwork": 260
  }
 }

@@ -15,7 +15,6 @@ export async function validateData() {
     mints,
     events,
     writing,
-    moments,
     series,
     layout,
     artwork,
@@ -28,7 +27,6 @@ export async function validateData() {
       'mints',
       'events',
       'writing',
-      'moments',
       'series',
       'layout',
       'artwork',
@@ -45,7 +43,10 @@ export async function validateData() {
   assert.equal(events.length, meta.counts.events);
   assert.equal(writing.items.length, meta.counts.writing);
   assert.equal(writing.advice.length, meta.counts.advice);
-  assert.equal(moments.length, meta.counts.moments);
+  assert.ok(
+    events.every((e) => e.kind !== 'moment'),
+    'POAP Moments are left out of the time capsule',
+  );
   assert.equal(artwork.length, meta.counts.artwork);
   assert.equal(dropIds.size, drops.length, 'drop ids are unique');
   assert.equal(addresses.size, people.length, 'addresses are unique');
@@ -84,8 +85,6 @@ export async function validateData() {
     for (const id of s.drops) assert.ok(dropIds.has(id), `series ${s.slug}`);
   assert.equal(Object.keys(layout.drops).length, drops.length);
   assert.equal(Object.keys(layout.people).length, people.length);
-  for (const m of moments)
-    assert.ok(m.author_label, `moment ${m.id} has an author label`);
   assert.ok(Array.isArray(media.rasterWidths) && media.rasterWidths.length);
   return {
     drops: drops.length,

@@ -6,7 +6,6 @@ import tokensData from '../../data/tokens.json';
 import peopleData from '../../data/people.json';
 import mintsData from '../../data/mints.json';
 import seriesData from '../../data/series.json';
-import momentsData from '../../data/moments.json';
 import writingData from '../../data/writing.json';
 import exportMeta from '../../data/export.json';
 
@@ -15,7 +14,6 @@ export const tokens = tokensData;
 export const people = peopleData;
 export const mints = mintsData;
 export const series = seriesData;
-export const moments = momentsData;
 export const writing = writingData;
 export const meta = exportMeta;
 export type Drop = (typeof drops)[number];

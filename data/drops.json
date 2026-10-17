@@ -21,7 +21,6 @@
   "first_mint": "2021-07-25T17:25:25+00:00",
   "last_mint": "2021-07-25T17:25:25+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 533122,
   "posts": []
  },
@@ -47,7 +46,6 @@
   "first_mint": "2021-07-16T17:58:55+00:00",
   "last_mint": "2023-02-28T14:27:35+00:00",
   "reserved": 13,
-  "moments": 0,
   "own_token": 533130,
   "posts": []
  },
@@ -73,7 +71,6 @@
   "first_mint": "2021-07-18T03:03:20+00:00",
   "last_mint": "2025-06-29T13:13:10+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 499157,
   "posts": []
  },
@@ -99,7 +96,6 @@
   "first_mint": "2021-07-26T01:20:50+00:00",
   "last_mint": "2021-09-22T03:59:25+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 604453,
   "posts": []
  },
@@ -125,7 +121,6 @@
   "first_mint": "2021-08-26T03:12:10+00:00",
   "last_mint": "2021-08-26T03:12:10+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 735405,
   "posts": []
  },
@@ -151,7 +146,6 @@
   "first_mint": "2021-09-04T18:26:00+00:00",
   "last_mint": "2021-09-04T22:03:50+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 1068867,
   "posts": [
    {
@@ -184,7 +178,6 @@
   "first_mint": "2021-09-14T14:35:10+00:00",
   "last_mint": "2023-01-11T21:09:20+00:00",
   "reserved": 7,
-  "moments": 0,
   "own_token": 1221503,
   "posts": []
  },
@@ -210,7 +203,6 @@
   "first_mint": "2021-09-15T19:33:50+00:00",
   "last_mint": "2024-01-25T22:10:20+00:00",
   "reserved": 9,
-  "moments": 0,
   "own_token": 1273919,
   "posts": []
  },
@@ -236,7 +228,6 @@
   "first_mint": "2021-10-23T02:07:30+00:00",
   "last_mint": "2023-05-13T18:57:20+00:00",
   "reserved": 38,
-  "moments": 0,
   "own_token": 2252196,
   "posts": [
    {
@@ -269,7 +260,6 @@
   "first_mint": "2021-07-13T18:08:50+00:00",
   "last_mint": "2021-10-26T17:04:07+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 499168,
   "posts": []
  },
@@ -295,7 +285,6 @@
   "first_mint": "2021-11-05T01:28:35+00:00",
   "last_mint": "2021-11-06T21:44:10+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 2557804,
   "posts": []
  },
@@ -321,7 +310,6 @@
   "first_mint": "2022-01-01T13:48:35+00:00",
   "last_mint": "2022-01-30T21:46:40+00:00",
   "reserved": 8,
-  "moments": 0,
   "own_token": 3398636,
   "posts": [
    {
@@ -360,7 +348,6 @@
   "first_mint": "2022-03-06T21:09:00+00:00",
   "last_mint": "2022-03-16T21:10:50+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 4299875,
   "posts": []
  },
@@ -386,7 +373,6 @@
   "first_mint": "2022-04-21T22:07:15+00:00",
   "last_mint": "2022-04-23T10:32:10+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 4765283,
   "posts": []
  },
@@ -412,7 +398,6 @@
   "first_mint": "2022-05-05T01:10:40+00:00",
   "last_mint": "2022-05-18T02:41:55+00:00",
   "reserved": 5,
-  "moments": 0,
   "own_token": 4896612,
   "posts": []
  },
@@ -438,7 +423,6 @@
   "first_mint": "2022-05-26T15:03:40+00:00",
   "last_mint": "2022-06-30T16:50:30+00:00",
   "reserved": 15,
-  "moments": 0,
   "own_token": 4904521,
   "posts": []
  },
@@ -464,7 +448,6 @@
   "first_mint": "2022-05-14T00:00:20+00:00",
   "last_mint": "2023-03-14T21:16:05+00:00",
   "reserved": 13,
-  "moments": 0,
   "own_token": 4964766,
   "posts": [
    {
@@ -503,7 +486,6 @@
   "first_mint": "2022-05-20T01:00:40+00:00",
   "last_mint": "2022-05-21T01:40:20+00:00",
   "reserved": 3,
-  "moments": 0,
   "own_token": 4991281,
   "posts": []
  },
@@ -529,7 +511,6 @@
   "first_mint": "2022-05-28T20:51:15+00:00",
   "last_mint": "2022-10-03T01:43:25+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 5068411,
   "posts": [
    {
@@ -580,7 +561,6 @@
   "first_mint": "2022-07-18T13:31:10+00:00",
   "last_mint": "2022-08-18T14:26:50+00:00",
   "reserved": 4,
-  "moments": 0,
   "own_token": 5262024,
   "posts": []
  },
@@ -606,7 +586,6 @@
   "first_mint": "2022-07-19T13:38:05+00:00",
   "last_mint": "2022-07-26T19:43:20+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 5262029,
   "posts": []
  },
@@ -632,7 +611,6 @@
   "first_mint": "2022-07-18T13:32:05+00:00",
   "last_mint": "2022-07-26T19:43:00+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 5262030,
   "posts": []
  },
@@ -658,7 +636,6 @@
   "first_mint": "2022-09-21T22:10:45+00:00",
   "last_mint": "2024-02-27T15:53:30+00:00",
   "reserved": 4,
-  "moments": 3,
   "own_token": 5649610,
   "posts": [
    {
@@ -697,7 +674,6 @@
   "first_mint": "2022-10-01T15:42:30+00:00",
   "last_mint": "2022-10-07T18:48:35+00:00",
   "reserved": 4,
-  "moments": 0,
   "own_token": 5705617,
   "posts": [
    {
@@ -730,7 +706,6 @@
   "first_mint": "2022-10-02T13:04:05+00:00",
   "last_mint": "2022-10-02T23:22:05+00:00",
   "reserved": 1,
-  "moments": 1,
   "own_token": 5705549,
   "posts": [
    {
@@ -763,7 +738,6 @@
   "first_mint": "2022-10-05T15:29:55+00:00",
   "last_mint": "2022-10-10T13:36:30+00:00",
   "reserved": 3,
-  "moments": 7,
   "own_token": 5712343,
   "posts": [
    {
@@ -796,7 +770,6 @@
   "first_mint": "2022-11-11T02:42:25+00:00",
   "last_mint": "2022-12-12T03:54:45+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 5885743,
   "posts": [
    {
@@ -841,7 +814,6 @@
   "first_mint": "2022-11-29T17:07:00+00:00",
   "last_mint": "2024-09-11T19:46:25+00:00",
   "reserved": 13,
-  "moments": 0,
   "own_token": 5968782,
   "posts": []
  },
@@ -867,7 +839,6 @@
   "first_mint": "2023-04-13T18:27:45+00:00",
   "last_mint": "2023-04-21T20:17:30+00:00",
   "reserved": 5,
-  "moments": 0,
   "own_token": 6551117,
   "posts": []
  },
@@ -893,7 +864,6 @@
   "first_mint": "2022-12-25T17:57:10+00:00",
   "last_mint": "2022-12-25T17:59:00+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6154076,
   "posts": []
  },
@@ -919,7 +889,6 @@
   "first_mint": "2023-01-25T22:29:00+00:00",
   "last_mint": "2023-01-25T22:29:00+00:00",
   "reserved": 3,
-  "moments": 0,
   "own_token": 6259626,
   "posts": []
  },
@@ -945,7 +914,6 @@
   "first_mint": "2023-01-03T14:03:10+00:00",
   "last_mint": "2023-02-28T14:42:25+00:00",
   "reserved": 7,
-  "moments": 0,
   "own_token": 6177735,
   "posts": [
    {
@@ -996,7 +964,6 @@
   "first_mint": "2023-01-25T14:11:35+00:00",
   "last_mint": "2024-09-11T19:46:25+00:00",
   "reserved": 7,
-  "moments": 0,
   "own_token": 6261374,
   "posts": []
  },
@@ -1022,7 +989,6 @@
   "first_mint": "2023-02-21T02:52:55+00:00",
   "last_mint": "2023-02-22T02:18:45+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6339074,
   "posts": []
  },
@@ -1048,7 +1014,6 @@
   "first_mint": "2023-02-14T23:01:50+00:00",
   "last_mint": "2023-02-14T23:23:20+00:00",
   "reserved": 0,
-  "moments": 1,
   "own_token": 6315996,
   "posts": []
  },
@@ -1074,7 +1039,6 @@
   "first_mint": "2023-02-24T19:54:30+00:00",
   "last_mint": "2023-02-26T19:41:15+00:00",
   "reserved": 7,
-  "moments": 0,
   "own_token": 6356207,
   "posts": [
    {
@@ -1107,7 +1071,6 @@
   "first_mint": "2023-03-06T19:45:10+00:00",
   "last_mint": "2023-03-10T03:18:35+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 6435177,
   "posts": []
  },
@@ -1133,7 +1096,6 @@
   "first_mint": "2023-02-27T15:56:45+00:00",
   "last_mint": "2023-03-14T16:34:45+00:00",
   "reserved": 13,
-  "moments": 0,
   "own_token": 6366384,
   "posts": []
  },
@@ -1159,7 +1121,6 @@
   "first_mint": "2023-03-01T13:41:55+00:00",
   "last_mint": "2023-03-02T22:05:30+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 6390435,
   "posts": []
  },
@@ -1185,7 +1146,6 @@
   "first_mint": "2023-03-07T15:49:15+00:00",
   "last_mint": "2023-03-14T20:52:30+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6443362,
   "posts": []
  },
@@ -1211,7 +1171,6 @@
   "first_mint": "2023-03-07T21:32:15+00:00",
   "last_mint": "2023-03-14T21:16:05+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6437422,
   "posts": [
    {
@@ -1250,7 +1209,6 @@
   "first_mint": "2023-03-11T20:54:25+00:00",
   "last_mint": "2023-03-14T02:51:20+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6456268,
   "posts": [
    {
@@ -1283,7 +1241,6 @@
   "first_mint": "2023-03-14T15:06:05+00:00",
   "last_mint": "2023-07-24T14:20:45+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 6461232,
   "posts": [
    {
@@ -1316,7 +1273,6 @@
   "first_mint": "2023-03-18T05:13:45+00:00",
   "last_mint": "2023-03-18T05:13:45+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6478050,
   "posts": [
    {
@@ -1349,7 +1305,6 @@
   "first_mint": "2023-04-06T22:52:35+00:00",
   "last_mint": "2023-04-23T16:28:45+00:00",
   "reserved": 5,
-  "moments": 0,
   "own_token": 6515752,
   "posts": []
  },
@@ -1375,7 +1330,6 @@
   "first_mint": "2023-04-04T19:44:35+00:00",
   "last_mint": "2023-04-04T20:10:25+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 6512281,
   "posts": []
  },
@@ -1401,7 +1355,6 @@
   "first_mint": "2023-04-05T11:37:55+00:00",
   "last_mint": "2023-04-07T00:38:10+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6515881,
   "posts": []
  },
@@ -1427,7 +1380,6 @@
   "first_mint": "2023-04-05T15:28:40+00:00",
   "last_mint": "2023-04-28T13:53:55+00:00",
   "reserved": 3,
-  "moments": 0,
   "own_token": 6552930,
   "posts": [
    {
@@ -1460,7 +1412,6 @@
   "first_mint": "2023-04-07T02:46:20+00:00",
   "last_mint": "2023-04-23T16:28:45+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 6516437,
   "posts": [
    {
@@ -1493,7 +1444,6 @@
   "first_mint": "2023-04-05T15:28:30+00:00",
   "last_mint": "2023-05-06T02:58:00+00:00",
   "reserved": 5,
-  "moments": 0,
   "own_token": 6578252,
   "posts": [
    {
@@ -1526,7 +1476,6 @@
   "first_mint": "2023-04-05T15:28:35+00:00",
   "last_mint": "2023-05-06T20:29:10+00:00",
   "reserved": 3,
-  "moments": 0,
   "own_token": 6567201,
   "posts": [
    {
@@ -1559,7 +1508,6 @@
   "first_mint": "2023-04-28T14:21:25+00:00",
   "last_mint": "2023-04-28T14:23:15+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 6586107,
   "posts": [
    {
@@ -1592,7 +1540,6 @@
   "first_mint": "2023-05-12T02:20:05+00:00",
   "last_mint": "2023-06-19T04:38:50+00:00",
   "reserved": 13,
-  "moments": 0,
   "own_token": 6617052,
   "posts": []
  },
@@ -1618,7 +1565,6 @@
   "first_mint": "2023-05-18T15:41:15+00:00",
   "last_mint": "2023-05-24T02:17:10+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 6632836,
   "posts": []
  },
@@ -1644,7 +1590,6 @@
   "first_mint": "2023-05-18T15:39:35+00:00",
   "last_mint": "2023-05-24T02:17:10+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 6632832,
   "posts": []
  },
@@ -1670,7 +1615,6 @@
   "first_mint": "2023-05-12T02:32:40+00:00",
   "last_mint": "2025-06-29T13:13:10+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 6617070,
   "posts": [
    {
@@ -1703,7 +1647,6 @@
   "first_mint": "2023-09-27T01:59:15+00:00",
   "last_mint": "2023-10-18T08:59:55+00:00",
   "reserved": 4,
-  "moments": 0,
   "own_token": 6801491,
   "posts": []
  },
@@ -1729,7 +1672,6 @@
   "first_mint": "2023-10-30T23:53:20+00:00",
   "last_mint": "2023-11-06T19:00:15+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 6885356,
   "posts": []
  },
@@ -1755,7 +1697,6 @@
   "first_mint": "2024-01-03T04:20:35+00:00",
   "last_mint": "2024-01-18T05:18:30+00:00",
   "reserved": 4,
-  "moments": 0,
   "own_token": 6957471,
   "posts": [
    {
@@ -1806,7 +1747,6 @@
   "first_mint": "2024-02-03T23:11:15+00:00",
   "last_mint": "2024-02-14T00:45:30+00:00",
   "reserved": 1,
-  "moments": 14,
   "own_token": 6991680,
   "posts": [
    {
@@ -1839,7 +1779,6 @@
   "first_mint": "2024-03-14T14:41:10+00:00",
   "last_mint": "2024-03-18T16:05:30+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 7072949,
   "posts": []
  },
@@ -1865,7 +1804,6 @@
   "first_mint": "2024-05-03T18:13:00+00:00",
   "last_mint": "2025-06-29T13:13:10+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7120292,
   "posts": []
  },
@@ -1891,7 +1829,6 @@
   "first_mint": "2024-05-07T20:40:55+00:00",
   "last_mint": "2024-05-15T02:32:15+00:00",
   "reserved": 10,
-  "moments": 0,
   "own_token": 7122301,
   "posts": []
  },
@@ -1917,7 +1854,6 @@
   "first_mint": "2024-05-16T22:53:35+00:00",
   "last_mint": "2025-06-29T13:13:10+00:00",
   "reserved": 9,
-  "moments": 0,
   "own_token": 7126846,
   "posts": []
  },
@@ -1943,7 +1879,6 @@
   "first_mint": "2024-05-24T21:39:40+00:00",
   "last_mint": "2025-06-29T13:13:10+00:00",
   "reserved": 3,
-  "moments": 1,
   "own_token": 7132736,
   "posts": [
    {
@@ -1976,7 +1911,6 @@
   "first_mint": "2024-05-31T00:29:45+00:00",
   "last_mint": "2024-05-31T00:30:30+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 7136146,
   "posts": [
    {
@@ -2009,7 +1943,6 @@
   "first_mint": "2024-08-17T02:26:55+00:00",
   "last_mint": "2024-08-17T18:19:55+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7180533,
   "posts": []
  },
@@ -2035,7 +1968,6 @@
   "first_mint": "2024-11-01T00:05:00+00:00",
   "last_mint": "2024-11-06T01:44:55+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7227349,
   "posts": [
    {
@@ -2068,7 +2000,6 @@
   "first_mint": "2024-11-05T00:53:45+00:00",
   "last_mint": "2024-11-12T13:30:40+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7229262,
   "posts": []
  },
@@ -2094,7 +2025,6 @@
   "first_mint": "2024-11-05T12:33:45+00:00",
   "last_mint": "2025-06-17T20:25:50+00:00",
   "reserved": 19,
-  "moments": 0,
   "own_token": 7230509,
   "posts": []
  },
@@ -2120,7 +2050,6 @@
   "first_mint": "2024-12-19T03:18:20+00:00",
   "last_mint": "2024-12-19T04:44:00+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 7276968,
   "posts": []
  },
@@ -2146,7 +2075,6 @@
   "first_mint": "2024-12-23T03:52:50+00:00",
   "last_mint": "2024-12-30T16:04:55+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 7281029,
   "posts": [
    {
@@ -2179,7 +2107,6 @@
   "first_mint": "2025-01-02T23:31:45+00:00",
   "last_mint": "2025-06-29T13:13:10+00:00",
   "reserved": 11,
-  "moments": 0,
   "own_token": 7284931,
   "posts": [
    {
@@ -2230,7 +2157,6 @@
   "first_mint": "2025-02-19T02:08:45+00:00",
   "last_mint": "2025-02-19T04:00:55+00:00",
   "reserved": 0,
-  "moments": 2,
   "own_token": 7308555,
   "posts": []
  },
@@ -2256,7 +2182,6 @@
   "first_mint": "2025-04-29T02:06:25+00:00",
   "last_mint": "2025-05-10T15:30:05+00:00",
   "reserved": 22,
-  "moments": 0,
   "own_token": 7343290,
   "posts": [
    {
@@ -2295,7 +2220,6 @@
   "first_mint": "2025-04-29T02:06:05+00:00",
   "last_mint": "2025-05-04T14:49:30+00:00",
   "reserved": 11,
-  "moments": 0,
   "own_token": 7343291,
   "posts": [
    {
@@ -2328,7 +2252,6 @@
   "first_mint": "2025-05-15T12:01:00+00:00",
   "last_mint": "2025-10-07T02:16:35+00:00",
   "reserved": 15,
-  "moments": 0,
   "own_token": 7353976,
   "posts": []
  },
@@ -2354,7 +2277,6 @@
   "first_mint": "2025-05-29T02:16:45+00:00",
   "last_mint": "2025-05-30T04:36:35+00:00",
   "reserved": 4,
-  "moments": 0,
   "own_token": 7361698,
   "posts": []
  },
@@ -2380,7 +2302,6 @@
   "first_mint": "2025-05-24T18:16:55+00:00",
   "last_mint": "2025-09-01T01:04:55+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7358039,
   "posts": [
    {
@@ -2413,7 +2334,6 @@
   "first_mint": "2025-05-25T11:52:25+00:00",
   "last_mint": "2025-09-01T00:33:00+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7358192,
   "posts": [
    {
@@ -2446,7 +2366,6 @@
   "first_mint": "2025-06-29T13:40:25+00:00",
   "last_mint": "2025-08-31T20:36:35+00:00",
   "reserved": 0,
-  "moments": 5,
   "own_token": 7368652,
   "posts": []
  },
@@ -2472,7 +2391,6 @@
   "first_mint": "2025-06-14T22:14:05+00:00",
   "last_mint": "2025-09-01T18:08:30+00:00",
   "reserved": 0,
-  "moments": 10,
   "own_token": 7368637,
   "posts": []
  },
@@ -2498,7 +2416,6 @@
   "first_mint": "2025-06-14T22:11:40+00:00",
   "last_mint": "2025-08-31T20:27:25+00:00",
   "reserved": 1,
-  "moments": 6,
   "own_token": 7368641,
   "posts": []
  },
@@ -2524,7 +2441,6 @@
   "first_mint": "2025-06-16T15:50:05+00:00",
   "last_mint": "2025-09-01T18:11:45+00:00",
   "reserved": 0,
-  "moments": 8,
   "own_token": 7368638,
   "posts": []
  },
@@ -2550,7 +2466,6 @@
   "first_mint": "2025-06-09T23:15:00+00:00",
   "last_mint": "2025-08-31T20:21:25+00:00",
   "reserved": 0,
-  "moments": 14,
   "own_token": 7368639,
   "posts": []
  },
@@ -2576,7 +2491,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-30T18:25:20+00:00",
   "reserved": 0,
-  "moments": 7,
   "own_token": 7368654,
   "posts": []
  },
@@ -2602,7 +2516,6 @@
   "first_mint": "2025-06-16T15:53:40+00:00",
   "last_mint": "2025-08-31T16:14:50+00:00",
   "reserved": 0,
-  "moments": 10,
   "own_token": 7368640,
   "posts": []
  },
@@ -2628,7 +2541,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-30T18:49:55+00:00",
   "reserved": 0,
-  "moments": 4,
   "own_token": 7441115,
   "posts": []
  },
@@ -2654,7 +2566,6 @@
   "first_mint": "2025-06-14T20:27:55+00:00",
   "last_mint": "2025-08-31T20:12:45+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7371432,
   "posts": []
  },
@@ -2680,7 +2591,6 @@
   "first_mint": "2025-06-23T22:15:10+00:00",
   "last_mint": "2025-09-01T17:50:35+00:00",
   "reserved": 0,
-  "moments": 8,
   "own_token": 7391295,
   "posts": []
  },
@@ -2706,7 +2616,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-22T18:40:10+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7409036,
   "posts": []
  },
@@ -2732,7 +2641,6 @@
   "first_mint": "2025-06-19T18:13:05+00:00",
   "last_mint": "2025-08-30T18:17:35+00:00",
   "reserved": 0,
-  "moments": 8,
   "own_token": 7441068,
   "posts": []
  },
@@ -2758,7 +2666,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-09-01T18:25:55+00:00",
   "reserved": 0,
-  "moments": 4,
   "own_token": 7376382,
   "posts": []
  },
@@ -2784,7 +2691,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-31T20:37:40+00:00",
   "reserved": 0,
-  "moments": 8,
   "own_token": 7441157,
   "posts": []
  },
@@ -2810,7 +2716,6 @@
   "first_mint": "2025-06-30T19:02:50+00:00",
   "last_mint": "2025-08-31T20:17:35+00:00",
   "reserved": 0,
-  "moments": 14,
   "own_token": 7438321,
   "posts": []
  },
@@ -2836,7 +2741,6 @@
   "first_mint": "2025-06-19T18:15:40+00:00",
   "last_mint": "2025-08-30T17:04:40+00:00",
   "reserved": 1,
-  "moments": 7,
   "own_token": 7441086,
   "posts": []
  },
@@ -2862,7 +2766,6 @@
   "first_mint": "2025-06-14T21:52:45+00:00",
   "last_mint": "2025-08-31T16:41:40+00:00",
   "reserved": 1,
-  "moments": 6,
   "own_token": 7441174,
   "posts": []
  },
@@ -2888,7 +2791,6 @@
   "first_mint": "2025-06-19T16:31:55+00:00",
   "last_mint": "2025-09-01T18:37:30+00:00",
   "reserved": 0,
-  "moments": 8,
   "own_token": 7409051,
   "posts": []
  },
@@ -2914,7 +2816,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-31T20:39:10+00:00",
   "reserved": 0,
-  "moments": 6,
   "own_token": 7441162,
   "posts": []
  },
@@ -2940,7 +2841,6 @@
   "first_mint": "2025-06-15T21:15:30+00:00",
   "last_mint": "2025-08-31T20:55:45+00:00",
   "reserved": 0,
-  "moments": 4,
   "own_token": 7371688,
   "posts": []
  },
@@ -2966,7 +2866,6 @@
   "first_mint": "2025-06-15T20:42:55+00:00",
   "last_mint": "2025-08-30T23:39:15+00:00",
   "reserved": 0,
-  "moments": 8,
   "own_token": 7364397,
   "posts": []
  },
@@ -2992,7 +2891,6 @@
   "first_mint": "2025-06-17T00:01:10+00:00",
   "last_mint": "2025-08-30T00:09:25+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7408993,
   "posts": []
  },
@@ -3018,7 +2916,6 @@
   "first_mint": "2025-06-17T19:13:55+00:00",
   "last_mint": "2025-08-29T23:43:55+00:00",
   "reserved": 1,
-  "moments": 2,
   "own_token": 7387993,
   "posts": []
  },
@@ -3044,7 +2941,6 @@
   "first_mint": "2025-06-15T21:04:35+00:00",
   "last_mint": "2025-08-31T20:48:50+00:00",
   "reserved": 0,
-  "moments": 5,
   "own_token": 7371704,
   "posts": []
  },
@@ -3070,7 +2966,6 @@
   "first_mint": "2025-06-01T22:57:00+00:00",
   "last_mint": "2025-08-30T00:27:20+00:00",
   "reserved": 1,
-  "moments": 3,
   "own_token": 7408966,
   "posts": []
  },
@@ -3096,7 +2991,6 @@
   "first_mint": "2025-06-19T18:16:00+00:00",
   "last_mint": "2025-08-30T17:02:00+00:00",
   "reserved": 2,
-  "moments": 8,
   "own_token": 7441075,
   "posts": []
  },
@@ -3122,7 +3016,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-26T01:56:40+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7432143,
   "posts": []
  },
@@ -3148,7 +3041,6 @@
   "first_mint": "2025-06-14T21:21:35+00:00",
   "last_mint": "2025-09-01T18:03:15+00:00",
   "reserved": 0,
-  "moments": 5,
   "own_token": 7371441,
   "posts": []
  },
@@ -3174,7 +3066,6 @@
   "first_mint": "2025-06-20T19:30:00+00:00",
   "last_mint": "2025-08-26T01:52:20+00:00",
   "reserved": 0,
-  "moments": 1,
   "own_token": 7432579,
   "posts": []
  },
@@ -3200,7 +3091,6 @@
   "first_mint": "2025-07-01T02:00:25+00:00",
   "last_mint": "2025-09-01T18:17:35+00:00",
   "reserved": 0,
-  "moments": 4,
   "own_token": 7438319,
   "posts": []
  },
@@ -3226,7 +3116,6 @@
   "first_mint": "2025-06-24T21:26:15+00:00",
   "last_mint": "2025-08-26T00:49:30+00:00",
   "reserved": 0,
-  "moments": 6,
   "own_token": 7431210,
   "posts": []
  },
@@ -3252,7 +3141,6 @@
   "first_mint": "2025-06-12T02:08:30+00:00",
   "last_mint": "2025-09-01T19:54:00+00:00",
   "reserved": 0,
-  "moments": 2,
   "own_token": 7369494,
   "posts": []
  },
@@ -3278,7 +3166,6 @@
   "first_mint": "2025-07-20T12:39:05+00:00",
   "last_mint": "2025-09-01T19:59:25+00:00",
   "reserved": 0,
-  "moments": 3,
   "own_token": 7369497,
   "posts": [
    {
@@ -3311,7 +3198,6 @@
   "first_mint": "2025-06-30T01:53:20+00:00",
   "last_mint": "2025-09-01T20:02:30+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7441187,
   "posts": []
  },
@@ -3337,7 +3223,6 @@
   "first_mint": "2025-07-20T12:40:35+00:00",
   "last_mint": "2025-09-01T20:04:10+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7441189,
   "posts": []
  },
@@ -3363,7 +3248,6 @@
   "first_mint": "2025-06-24T20:42:35+00:00",
   "last_mint": "2025-08-30T21:29:25+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7409077,
   "posts": []
  },
@@ -3389,7 +3273,6 @@
   "first_mint": "2025-07-21T02:52:15+00:00",
   "last_mint": "2025-09-01T20:06:30+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7441192,
   "posts": []
  },
@@ -3415,7 +3298,6 @@
   "first_mint": "2025-07-21T02:55:30+00:00",
   "last_mint": "2025-09-01T20:08:15+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7441195,
   "posts": []
  },
@@ -3441,7 +3323,6 @@
   "first_mint": "2025-09-05T22:04:35+00:00",
   "last_mint": "2025-09-05T22:05:20+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": null,
   "posts": []
  },
@@ -3467,7 +3348,6 @@
   "first_mint": "2025-06-29T11:45:30+00:00",
   "last_mint": "2025-07-01T01:32:25+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7378481,
   "posts": [
    {
@@ -3500,7 +3380,6 @@
   "first_mint": "2025-06-18T00:11:35+00:00",
   "last_mint": "2025-06-18T00:39:25+00:00",
   "reserved": 0,
-  "moments": 1,
   "own_token": null,
   "posts": [
    {
@@ -3533,7 +3412,6 @@
   "first_mint": "2025-06-20T21:16:00+00:00",
   "last_mint": "2025-06-29T03:18:35+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 7374837,
   "posts": [
    {
@@ -3566,7 +3444,6 @@
   "first_mint": "2025-06-30T23:39:45+00:00",
   "last_mint": "2025-07-01T00:06:20+00:00",
   "reserved": 10,
-  "moments": 9,
   "own_token": 7379713,
   "posts": []
  },
@@ -3592,7 +3469,6 @@
   "first_mint": "2025-07-30T22:50:55+00:00",
   "last_mint": "2025-12-24T21:25:15+00:00",
   "reserved": 2,
-  "moments": 0,
   "own_token": 7399817,
   "posts": [
    {
@@ -3625,7 +3501,6 @@
   "first_mint": "2025-08-30T23:51:45+00:00",
   "last_mint": "2025-08-31T20:34:20+00:00",
   "reserved": 0,
-  "moments": 5,
   "own_token": 7441226,
   "posts": []
  },
@@ -3651,7 +3526,6 @@
   "first_mint": "2025-08-04T01:23:30+00:00",
   "last_mint": "2025-12-24T21:25:15+00:00",
   "reserved": 2,
-  "moments": 1,
   "own_token": 7402821,
   "posts": []
  },
@@ -3677,7 +3551,6 @@
   "first_mint": "2025-11-28T15:46:05+00:00",
   "last_mint": "2026-04-15T15:17:10+00:00",
   "reserved": 1,
-  "moments": 0,
   "own_token": 7529645,
   "posts": []
  },
@@ -3703,7 +3576,6 @@
   "first_mint": "2026-01-16T11:59:20+00:00",
   "last_mint": "2026-02-17T21:42:55+00:00",
   "reserved": 0,
-  "moments": 1,
   "own_token": 7552077,
   "posts": []
  },
@@ -3729,7 +3601,6 @@
   "first_mint": "2026-01-06T12:57:55+00:00",
   "last_mint": "2026-04-17T21:36:25+00:00",
   "reserved": 0,
-  "moments": 0,
   "own_token": 7548446,
   "posts": []
  },
@@ -3755,7 +3626,6 @@
   "first_mint": "2026-01-01T23:36:40+00:00",
   "last_mint": "2026-02-17T21:42:20+00:00",
   "reserved": 7,
-  "moments": 5,
   "own_token": 7547791,
   "posts": []
  }

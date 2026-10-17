@@ -125,21 +125,10 @@ Upload to `s3://poap-storage-archive-999153317627/datasets/<sha256>/export.tar.g
 `If-None-Match: *` (the AWS MCP presigned upload, as nnxyz does), and record bucket, key
 and hash in `infra/dataset.json` in the site repo.
 
-## 6. Moment photos from Photos
+## 6. Moment photos (dropped)
 
-The 79 photos Jamie attached to POAP Moments are gone upstream. The moments keep only the
-upload time (`data/moments.json`, `by_jamie: true`, `media > 0`), and a photo is usually
-taken well before it is posted, so match on a window, not the minute. The Otto account's
-Photos library is empty and Jamie's account is closed to it (2026-10-17), so Jamie runs
-`scripts/find_moment_photos.py` in `poap-archive` on the Mac with the library. It reads
-Photos only and exports the nearest photos taken before each upload, with
-`candidates.csv`. Pick each match from the candidates (look at them; check with Jamie
-where unsure). Put the matched files in a new media prefix,
-`moments/<moment id>.<ext>`, add the prefix to `tools/delivery-plan.mjs`,
-`tools/validate-site.py`, `infra/delivery.json` and `tools/validate-infra.mjs` together
-(the infra change is a reviewed change set), publish with `media:publish`, and add a
-`photo` key to the moment rows in the export. This is the one step that changes the data
-contract; do it in `poap-archive` first.
+Jamie decided on 2026-10-17 to leave POAP Moments out of the time capsule entirely. There
+is no `moments/` media prefix and no moments in the export.
 
 ## 7. Merge the design branch in poap-archive
 

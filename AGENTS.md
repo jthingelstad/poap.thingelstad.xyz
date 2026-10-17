@@ -15,8 +15,10 @@ read it before changing structure, URLs or data.
   `/people/<address>/`, `/timeline/<year>/`, `/network/`, `/series/<slug>/`. Kudos and
   cross-links depend on them. `src/lib/data.ts` is the one place they are built.
 - **People are named**: primary ENS name where set, shortened address otherwise, as POAP
-  showed them (Jamie's decision, 2026-10-17). Moments by others are quoted with the
-  author's name.
+  showed them (Jamie's decision, 2026-10-17).
+- **No POAP Moments.** Moments were an add-on to the protocol that was never fully
+  adopted; Jamie left them out entirely (2026-10-17). The export carries none and
+  `validate:data` fails if a moment appears.
 - **Media.** Drop artwork lives in the web bucket under `art/` (originals, GIF where
   animated) and `raster/` (WebP stills). Pages reference URLs; nothing under those
   prefixes is ever in `dist/`. `tools/validate-site.py` fails the build if a referenced
