@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { meta } from '../lib/data';
+const wallets = Object.entries(meta.wallets);
+---
+
+<Layout title="About — Proof of a Person">
+  <article class="text-page">
+    <h1>About</h1>
+    <p>
+      Proof of Attendance Protocol, 2019 to 2026. POAP began as about a hundred
+      badges for hackathon attendees at ETHDenver in February 2019, became a
+      company, minted some 7.6 million tokens for about 46,000 issuers, entered
+      maintenance mode on 2026-03-16, created its last drop on 2026-07-31 and
+      announced its wind-down on 2026-08-03. The tokens stay on-chain.
+    </p>
+    <p>
+      This site reads the four letters its own way. A collection of POAPs is
+      proof of a person: where they went, what they cared about, who they stood
+      next to. Jamie always said POAP was about people and not money, unlike so
+      much of crypto. In his words from 2023, "POAPs are meant to collect and
+      curate memories, not make money."
+    </p>
+    <h2>The data</h2>
+    <p>
+      Everything here comes from
+      <a href="https://github.com/jthingelstad/poap-archive">
+        jthingelstad/poap-archive
+      </a>
+      , a capture made on {meta.captured} from the POAP Compass API, the Gnosis
+      chain, POAP's asset host, thingelstad.com and the community snapshot at
+      poaparchive.com. Addresses and ENS names are public on-chain and are shown
+      as POAP showed them: the primary ENS name where one is set, the shortened
+      address otherwise.
+    </p>
+    <h2>Jamie's wallets</h2>
+    <table>
+      <tr>
+        <th>ENS</th>
+        <th>Address</th>
+      </tr>
+      {wallets.map(([address, name]) => (
+        <tr>
+          <td>{name}</td>
+          <td>
+            <code>{address}</code>
+          </td>
+        </tr>
+      ))}
+    </table>
+    <h2>What is lost</h2>
+    <p>
+      The photos attached to POAP Moments are gone from POAP's servers. The text
+      survives. Drop artwork is served from a copy taken from assets.poap.xyz
+      while it was still up.
+    </p>
+    <h2>Colophon</h2>
+    <p>
+      Built with Astro from a JSON export of the archive, hosted on S3 and
+      CloudFront, with Tinylytics for private visit counts and kudos. The site
+      repository is
+      <a href="https://github.com/jthingelstad/poap.thingelstad.xyz">
+        jthingelstad/poap.thingelstad.xyz
+      </a>
+      .
+    </p>
+  </article>
+</Layout>

@@ -1,0 +1,24 @@
+{
+ "archive": "jthingelstad/poap-archive",
+ "commit": "1c700db0fb4c49a4cc0709dddaf0932b88b1d5ee",
+ "exported": "2026-10-17T12:37:32.565862+00:00",
+ "captured": "2026-10-17",
+ "wallets": {
+  "0x111accebf9d70d9c06de2d38f9392522e82ecf29": "poap.thingelstad.eth",
+  "0xb81b70afee42e944b88d06a71e0531852c612056": "thingelstad.onpoap.eth",
+  "0x2bda946a7740b1ddb0fd5c226819170c4dd15720": "thingelstad.eth",
+  "0xf1f02faf6c2d5e2ddd15031489b1d095ba5fe6cf": "ens.thingelstad.eth"
+ },
+ "counts": {
+  "drops": 130,
+  "tokens": 259,
+  "tokens_from_others": 130,
+  "people": 639,
+  "mints": 2072,
+  "events": 3052,
+  "writing": 209,
+  "advice": 25,
+  "moments": 266,
+  "artwork": 260
+ }
+}

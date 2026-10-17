@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { counts, drops, people, tokens } from '../lib/data';
+const fromOthers = tokens.filter((t) => !t.own_drop).length;
+const first = tokens[0];
+const last = tokens[tokens.length - 1];
+const years = [...new Set(drops.map((d) => d.date.slice(0, 4)))].sort();
+---
+
+<Layout>
+  <section class="hero">
+    <p class="mark">POAP</p>
+    <h1>Proof of a Person</h1>
+    <p class="sub">
+      Jamie Thingelstad's POAP time capsule, 2021 to 2026. Proof of Attendance
+      Protocol wound down in 2026. What stays is the record: what one person
+      collected from the world, what he made for other people, and the people
+      who have proof of him.
+    </p>
+  </section>
+  <div class="totals">
+    <div>
+      <b>{counts.tokens}</b>tokens collected
+    </div>
+    <div>
+      <b>{fromOthers}</b>from other people's drops
+    </div>
+    <div>
+      <b>{counts.drops}</b>drops issued
+    </div>
+    <div>
+      <b>{counts.mints.toLocaleString('en-US')}</b>tokens minted from them
+    </div>
+    <div>
+      <b>{people.length}</b>people who collected one
+    </div>
+  </div>
+  <section class="text-page">
+    <p class="dek">
+      The first token was the ENS 4th Anniversary vote on{' '}
+      {first.minted.slice(0, 10)}. The last was {last.drop.name} on{' '}
+      {last.minted.slice(0, 10)}. Between them, drops in {years.length}
+      years, from {years[0]} to {years[years.length - 1]}.
+    </p>
+    <p class="dek">
+      The site is being built in the open. The timeline, the network, the drops
+      and the people arrive page by page; the data behind them is complete and
+      lives in
+      <a href="https://github.com/jthingelstad/poap-archive">poap-archive</a>.
+    </p>
+  </section>
+</Layout>

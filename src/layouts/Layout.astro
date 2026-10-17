@@ -1,0 +1,149 @@
+---
+import '../styles/global.css';
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+const SITE_NAME = 'Proof of a Person';
+const {
+  title = SITE_NAME,
+  description = "POAP: Proof of a Person. Jamie Thingelstad's POAP time capsule, 2021 to 2026: what he collected, what he issued, and the people who collected it.",
+  image,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const analytics =
+  import.meta.env.PROD && import.meta.env.PUBLIC_TINYLYTICS_ENABLED === 'true';
+---
+
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      // Read before the first paint so navigation keeps the chosen theme.
+      try {
+        if (localStorage.getItem('poap-theme') === 'dark')
+          document.documentElement.dataset.theme = 'dark';
+      } catch {
+        /* Light remains the default when storage is unavailable. */
+      }
+    </script>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:url" content={canonical} />
+    {image && (
+      <meta property="og:image" content={new URL(image, Astro.site).href} />
+    )}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="theme-color"
+      content="#f7f5ef"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#16150f"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body data-analytics-enabled={String(analytics)}>
+    <a href="#main" class="skip-link">
+      Skip to content
+    </a>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Proof of a Person, home">
+        <span class="mark">POAP</span>
+        <span class="expansion">Proof of a Person</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="/about/">About</a>
+        <button
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Use dark background"
+          hidden
+        >
+          <span data-theme-label>Dark</span>
+        </button>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        Jamie Thingelstad's POAP time capsule, 2021 to 2026. Data from
+        <a href="https://github.com/jthingelstad/poap-archive">poap-archive</a>,
+        captured after the protocol wound down. The tokens stay on-chain.
+      </p>
+    </footer>
+    <div id="kudos-notice" role="status" class="notice" hidden>
+      Kudos will be available on the published site.
+    </div>
+    {analytics && <script is:inline>
+      if (location.hostname === 'poap.thingelstad.xyz') {
+        const script = document.createElement('script');
+        script.src =
+          'https://tinylytics.app/embed/nQYJ5URe6Y3umkYW7HQN.js?kudos=custom';
+        script.defer = true;
+        document.body.append(script);
+      }
+    </script>}
+    <script>
+      const themeToggle = document.querySelector<HTMLButtonElement>(
+        '[data-theme-toggle]',
+      )!;
+      function showTheme(theme: 'light' | 'dark') {
+        document.documentElement.dataset.theme = theme;
+        themeToggle.setAttribute(
+          'aria-label',
+          `Use ${theme === 'dark' ? 'light' : 'dark'} background`,
+        );
+        themeToggle.querySelector('[data-theme-label]')!.textContent =
+          theme === 'dark' ? 'Light' : 'Dark';
+      }
+      showTheme(
+        document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light',
+      );
+      themeToggle.hidden = false;
+      themeToggle.addEventListener('click', () => {
+        const theme =
+          document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        showTheme(theme);
+        try {
+          localStorage.setItem('poap-theme', theme);
+        } catch {
+          /* Switching still works for this page. */
+        }
+      });
+      const live =
+        document.body.dataset.analyticsEnabled === 'true' &&
+        location.hostname === 'poap.thingelstad.xyz';
+      if (!live) {
+        let hideNotice: ReturnType<typeof setTimeout>;
+        document
+          .querySelectorAll<HTMLButtonElement>('.kudos')
+          .forEach((button) => {
+            button.addEventListener('click', () => {
+              const notice =
+                document.querySelector<HTMLElement>('#kudos-notice')!;
+              notice.hidden = false;
+              clearTimeout(hideNotice);
+              hideNotice = setTimeout(() => {
+                notice.hidden = true;
+              }, 3000);
+            });
+          });
+      }
+    </script>
+  </body>
+</html>

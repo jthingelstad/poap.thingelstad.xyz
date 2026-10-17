@@ -1,0 +1,2662 @@
+[
+ {
+  "id": "d754fc3f-ee4f-4266-8dd5-0c1e4049fddb",
+  "drop": 66379,
+  "date": "2023-06-01T13:37:20.002000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "4fa11743-86fa-4597-a339-76b34cb4264c",
+  "drop": 66379,
+  "date": "2023-06-01T13:37:23.102000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c0f0cb57-750a-4313-8c85-b4400ff5878c",
+  "drop": 66379,
+  "date": "2023-06-01T13:37:26.142000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "2ddc60ee-ec2e-49d9-a632-3cd7fd9a6373",
+  "drop": 67164,
+  "date": "2023-06-01T13:44:28.440000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "d1f2ed12-935e-433d-aefa-225b8ca61ce5",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:03.453000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "73b6a8d4-38b7-4727-ba9e-9cd235b34607",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:06.433000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ecc3e154-e090-4932-b269-de4f3264059a",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:09.712000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "730f8d6c-8117-4d40-a9a1-b928cd9b8bc5",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:12.573000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "17607edf-1191-46d5-97a8-c94a3ca8d789",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:15.853000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ee402b4e-e6d0-4cf0-9b43-fd043159789e",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:19.794000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "795591fb-e5dc-4c09-9344-0144637eb19a",
+  "drop": 72223,
+  "date": "2023-06-01T14:05:22.852000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "b00ce977-64dc-4e95-8905-91193addc4ca",
+  "drop": 101293,
+  "date": "2023-06-01T17:10:17.504000+00:00",
+  "author": "0x2bda946a7740b1ddb0fd5c226819170c4dd15720",
+  "author_label": "thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e959558b-258f-4697-ada5-808c9c5d9758",
+  "drop": 167733,
+  "date": "2024-02-03T22:58:52.467000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "hectorguatemala.eth!",
+  "media": 1
+ },
+ {
+  "id": "0329c1e7-e750-4bff-9fc0-758033d33eef",
+  "drop": 167733,
+  "date": "2024-02-03T22:59:19.946000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Max engaging with Dinosaurs",
+  "media": 1
+ },
+ {
+  "id": "a4bc412c-886b-4fac-9e3f-d4a8af3a1729",
+  "drop": 167733,
+  "date": "2024-02-03T22:59:45.049000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Tyler's first time in Spatial Computing!",
+  "media": 1
+ },
+ {
+  "id": "f380595b-648c-4dc0-84d2-a583599766b3",
+  "drop": 167733,
+  "date": "2024-02-03T23:00:15.283000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Levi on the tightrope in an Immersive Experience!",
+  "media": 1
+ },
+ {
+  "id": "67488611-f7af-44d1-b846-a9011b7d82ec",
+  "drop": 167733,
+  "date": "2024-02-04T19:59:44.503000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Mazie exploring Spatial Computing!",
+  "media": 1
+ },
+ {
+  "id": "16388554-6627-442d-bee9-3062f88b706c",
+  "drop": 167733,
+  "date": "2024-02-07T22:53:42.148000+00:00",
+  "author": "0x0db89e48fc3a1315d45ffaed10d01d8b962f89e8",
+  "author_label": "liamcon.eth",
+  "by_jamie": false,
+  "text": "Today i realized i better get used to seeing people walking around with headsets on.",
+  "media": 0
+ },
+ {
+  "id": "22ae0ddb-9bd3-4f47-b93c-0ce1870c6236",
+  "drop": 167733,
+  "date": "2024-02-08T04:27:54.815000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Alex I checking out spatial computing.",
+  "media": 1
+ },
+ {
+  "id": "47eb4bcc-7927-4637-b3c4-ca475a42a8ba",
+  "drop": 167733,
+  "date": "2024-02-08T04:28:32.035000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "liamcon.eth with the Apple Vision Pro!",
+  "media": 1
+ },
+ {
+  "id": "acc4e8c3-6856-4262-a0c9-0307d9954e23",
+  "drop": 167733,
+  "date": "2024-02-08T04:29:27.198000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "nanderson.eth exploring Apple Vision Pro!",
+  "media": 1
+ },
+ {
+  "id": "09c2fe97-78af-4720-9b33-55c42d1fe2bf",
+  "drop": 167733,
+  "date": "2024-02-11T20:51:30.734000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0fa9b272-63d2-43a0-aec3-741a5e8ee737",
+  "drop": 167733,
+  "date": "2024-02-11T20:51:47.145000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ee5d54a0-66d3-44de-9398-8e308d32dfcf",
+  "drop": 167733,
+  "date": "2024-02-11T20:51:58.387000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8e4332bf-b13f-4390-800a-fa2f6a97356d",
+  "drop": 167733,
+  "date": "2024-02-16T00:19:55.874000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8990c844-3e5e-43ca-8b69-fefb1fd0dbb5",
+  "drop": 167733,
+  "date": "2024-02-16T00:21:59.307000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e0b95ba4-81e8-4692-b3da-778389066dd3",
+  "drop": 174087,
+  "date": "2024-08-10T16:21:04.940000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e6831116-a017-43c8-9959-94adf2c4404a",
+  "drop": 185737,
+  "date": "2025-02-19T04:48:24.392000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "a76de841-f177-4e97-a303-41871409c95e",
+  "drop": 185737,
+  "date": "2025-02-19T04:49:13.975000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "42dad70b-df84-48b9-8a7c-1bb025661482",
+  "drop": 190337,
+  "date": "2025-05-25T11:55:08.505000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "dc343f47-6926-44d3-8d26-08fee7af6eaa",
+  "drop": 190539,
+  "date": "2025-05-31T14:09:54.647000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Tammy and I on our walk around Lake Harriet capturing the very first POAP of the 612 POAP Challenge!\nhttps://www.thingelstad.com/2025/05/31/finished-mile-walk-in-minutes.html",
+  "media": 1
+ },
+ {
+  "id": "418c6334-259a-4900-a921-7721cb351e45",
+  "drop": 190517,
+  "date": "2025-06-10T12:01:16.531000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0dc12eb3-ed72-4cf8-b037-5404dd263ce4",
+  "drop": 190520,
+  "date": "2025-06-10T12:01:59.529000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0cf64af9-4206-42dd-b0ad-0c246db8220b",
+  "drop": 190521,
+  "date": "2025-06-10T12:02:16.619000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "aa5a0088-182e-45f8-9878-0346f271d4ac",
+  "drop": 190523,
+  "date": "2025-06-10T12:02:37.231000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "d4da619d-9982-4141-9ec4-29f26ee35948",
+  "drop": 190518,
+  "date": "2025-06-10T12:02:55.541000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "bb4b6f59-7ede-43a6-8c34-9bd857b42245",
+  "drop": 190516,
+  "date": "2025-06-10T12:03:13.827000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3487ab86-db32-491c-9663-f31012a11a8b",
+  "drop": 190522,
+  "date": "2025-06-10T12:03:30.949000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1f0a71db-c849-4498-9188-93abcaa9cc88",
+  "drop": 190525,
+  "date": "2025-06-14T20:29:10.025000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "68145507-2ae3-41f8-9f18-1bd5228158a0",
+  "drop": 190525,
+  "date": "2025-06-14T20:32:37.458000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "9d80bd08-b9d6-4c15-91bb-bc2e9c83ff76",
+  "drop": 190525,
+  "date": "2025-06-14T20:32:37.634000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "6361f416-1a21-4bc4-b475-4c8a1ab09ba6",
+  "drop": 190546,
+  "date": "2025-06-14T21:22:52.596000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "9333cfeb-1e4a-4bef-87cf-ef5a35ab5d59",
+  "drop": 190546,
+  "date": "2025-06-14T21:22:57.846000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Recursive selfie while we were collecting the Grain Belt Sign for the 612 POAP Challenge! https://www.thingelstad.com/projects/612-poap-challenge/",
+  "media": 1
+ },
+ {
+  "id": "d08045cc-6c94-478b-906f-c02f1df75335",
+  "drop": 190533,
+  "date": "2025-06-14T21:53:26.245000+00:00",
+  "author": "0x27c911e0a7c22eb489b027e3342f3199ff29acad",
+  "author_label": "0x27c9…acad",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f2e0f2dc-c90b-47d2-af9c-9b91912b5a4f",
+  "drop": 190546,
+  "date": "2025-06-14T22:35:55.390000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "6484bb97-3d22-46d7-a1ed-f8dbdd05f6f9",
+  "drop": 190537,
+  "date": "2025-06-15T20:49:19.487000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Got an Easter Egg location!",
+  "media": 1
+ },
+ {
+  "id": "accff4ab-4fe3-4692-af39-60a9576a17aa",
+  "drop": 190539,
+  "date": "2025-06-15T22:11:12.651000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": "Biking",
+  "media": 1
+ },
+ {
+  "id": "0103ea1e-e6f9-4bf5-834c-19b253fbfe9c",
+  "drop": 190539,
+  "date": "2025-06-15T22:11:46.091000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "db919f22-213e-4040-8201-b37a0e5bd239",
+  "drop": 190539,
+  "date": "2025-06-15T22:18:05.007000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f04e9087-b7a3-4a43-b176-09d72c0bc255",
+  "drop": 190538,
+  "date": "2025-06-15T22:19:05.172000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8ffc28be-3404-47c2-a7ac-51d558fad6fa",
+  "drop": 190538,
+  "date": "2025-06-15T22:19:18.548000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Got it on a Father’s Day bike ride.",
+  "media": 1
+ },
+ {
+  "id": "5e215078-0355-4fb0-8d06-6255dc038ab0",
+  "drop": 190538,
+  "date": "2025-06-15T22:20:43.235000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "6ddefdc3-9427-49df-aa7f-f7232fec373d",
+  "drop": 190538,
+  "date": "2025-06-15T22:36:14.200000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": "Bike",
+  "media": 1
+ },
+ {
+  "id": "ebf2965e-c2f5-4fbc-a7d9-a6abfdd58930",
+  "drop": 190542,
+  "date": "2025-06-15T22:37:23.916000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": "Bike",
+  "media": 1
+ },
+ {
+  "id": "59b13fe5-9feb-4da7-ad2d-3adaa563d787",
+  "drop": 190542,
+  "date": "2025-06-15T22:37:39.065000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "aa8bab94-4198-4b43-8f89-efe153173b4d",
+  "drop": 190542,
+  "date": "2025-06-15T22:37:39.124000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "66a310ab-81d6-4731-a320-4ee0876a25e2",
+  "drop": 190542,
+  "date": "2025-06-15T22:37:52.901000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1b2fd1aa-0f66-4e07-94e3-826f2f9c610e",
+  "drop": 190542,
+  "date": "2025-06-15T22:39:19.311000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Family bike ride!",
+  "media": 1
+ },
+ {
+  "id": "561d79fa-c9bd-4876-932d-ab8c10a7cc8d",
+  "drop": 191042,
+  "date": "2025-06-18T00:40:02.184000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "d904d45c-d297-472b-bee6-e7708afff813",
+  "drop": 190534,
+  "date": "2025-06-19T18:01:06.368000+00:00",
+  "author": "0x4bc864acb5b517a775aeb49d9e49660fb320bbb5",
+  "author_label": "0x4bc8…bbb5",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "cb50cb2b-ee2c-488b-b04e-6e6b2481d08b",
+  "drop": 190532,
+  "date": "2025-06-19T18:17:27.773000+00:00",
+  "author": "0x519f790c419576b20c57b9a9e86a005a585afe1a",
+  "author_label": "nanderson.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "27e7c47a-cb2b-4ef5-ae72-b3238c2ab95b",
+  "drop": 190543,
+  "date": "2025-06-19T18:51:26.748000+00:00",
+  "author": "0x519f790c419576b20c57b9a9e86a005a585afe1a",
+  "author_label": "nanderson.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0bac517f-b25a-42b1-8861-1df90f9f23d4",
+  "drop": 190549,
+  "date": "2025-06-25T02:45:59.733000+00:00",
+  "author": "0x17470261d36fd5f3c6d19e750f6f6f7b389df357",
+  "author_label": "ericmwalk.eth",
+  "by_jamie": false,
+  "text": "I have never been to this site but here I am now at the top of the hill great view too back at Minneapolis if you turn around from this spot.",
+  "media": 1
+ },
+ {
+  "id": "9850fd82-17b6-499f-85d0-d56262f5d110",
+  "drop": 190518,
+  "date": "2025-06-25T20:38:46.331000+00:00",
+  "author": "0x9ef6f70b9a844ea0de22930979cc3570492f142c",
+  "author_label": "0x9ef6…142c",
+  "by_jamie": false,
+  "text": "Great French pastries",
+  "media": 1
+ },
+ {
+  "id": "f0f85ea4-c2ae-40bb-b933-d366d56732ea",
+  "drop": 190521,
+  "date": "2025-06-25T20:50:46.067000+00:00",
+  "author": "0x9ef6f70b9a844ea0de22930979cc3570492f142c",
+  "author_label": "0x9ef6…142c",
+  "by_jamie": false,
+  "text": "Waiting for the bus in the rain",
+  "media": 1
+ },
+ {
+  "id": "786ce7cd-a58f-4bd0-8145-646b7bc043f4",
+  "drop": 191378,
+  "date": "2025-07-01T00:13:31.141000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ac8ab8d8-dec7-4e4f-96a1-93e455984963",
+  "drop": 190531,
+  "date": "2025-07-01T00:15:38.453000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "7c88523d-7c55-406a-a72a-dfe1bdf6d7f7",
+  "drop": 190548,
+  "date": "2025-07-01T02:06:29.659000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ade45389-a4d7-46f8-9ee7-0900d14564fd",
+  "drop": 191378,
+  "date": "2025-07-03T03:43:05.595000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e06aca34-3f35-424e-9ca6-5bd93d338d28",
+  "drop": 191378,
+  "date": "2025-07-03T03:43:24.232000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5cbaeb5a-9994-4fcd-a65b-852287c13451",
+  "drop": 191378,
+  "date": "2025-07-03T03:43:37.634000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5841d900-729c-4024-b4ea-c86f05dd73ef",
+  "drop": 191378,
+  "date": "2025-07-03T03:45:03.558000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "9b7f8de1-37f8-4dff-9119-4d8fcb22f674",
+  "drop": 191378,
+  "date": "2025-07-03T03:45:58.677000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0109d49a-8728-4022-894c-fd7451fffe4a",
+  "drop": 191378,
+  "date": "2025-07-03T03:46:17.693000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0c3f334d-4526-4e98-a394-1307e62c6708",
+  "drop": 191378,
+  "date": "2025-07-03T03:47:22.808000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "https://www.thingelstad.com/2025/06/18/im-going-to-be-sharing.html",
+  "media": 0
+ },
+ {
+  "id": "fd64779d-8798-47b7-9a16-338cc97d292a",
+  "drop": 191378,
+  "date": "2025-07-03T03:48:29.453000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Video of the talk for replay.\nhttps://www.linkedin.com/posts/mnblockchain_activity-7345561169119584256-jS-F",
+  "media": 0
+ },
+ {
+  "id": "ff3ff391-21a7-4150-96f7-add52be15823",
+  "drop": 190526,
+  "date": "2025-07-04T18:17:25.860000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8d63b8ce-bf27-4b8a-a6fe-d38e9e25a2cc",
+  "drop": 190526,
+  "date": "2025-07-04T18:21:01.072000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "87c9ec16-2a82-403d-bd1c-d3eb4c41d9d7",
+  "drop": 190526,
+  "date": "2025-07-04T18:21:32.768000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "fee08685-5d75-41a7-a973-b5b704e68762",
+  "drop": 190541,
+  "date": "2025-07-06T21:30:07.395000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "19065ddf-b45b-4ce4-9d49-3479343b49a3",
+  "drop": 190541,
+  "date": "2025-07-06T21:32:24.782000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0b305049-cf82-43b2-982f-a1a972d53e1a",
+  "drop": 190518,
+  "date": "2025-07-07T19:29:56.931000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c4ea6126-cd4a-4910-869d-34154c159ae8",
+  "drop": 190517,
+  "date": "2025-07-07T19:37:59.869000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "bbba1028-4526-4467-b5f2-cd9477eef790",
+  "drop": 190520,
+  "date": "2025-07-07T19:40:06.482000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "6f6642fc-fbee-4ed1-9fcd-ddccf3156643",
+  "drop": 190521,
+  "date": "2025-07-07T19:41:32.710000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f1cf0347-aada-472d-8532-d9dabdc08ca9",
+  "drop": 190517,
+  "date": "2025-07-07T19:42:14.608000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "dafc6a3b-9d50-4aba-a64d-8b662c0bbe8f",
+  "drop": 190523,
+  "date": "2025-07-07T19:44:26.139000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "29a5790b-b7a4-419e-89b5-c4b150f6667c",
+  "drop": 190523,
+  "date": "2025-07-07T19:47:08.316000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ff1af4ae-1028-4335-ac35-20e73dfc875f",
+  "drop": 190521,
+  "date": "2025-07-07T19:49:15.969000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "2b13a384-d84c-4314-90ca-d0f07ac97257",
+  "drop": 190521,
+  "date": "2025-07-07T19:51:01.532000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "59c6d87f-5d9d-488e-b84b-4352b0220638",
+  "drop": 190531,
+  "date": "2025-07-07T19:56:52.310000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "d34a40fd-8f1a-461b-b528-a6c93fb3cc8b",
+  "drop": 190531,
+  "date": "2025-07-07T19:57:32.340000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "67fdc8ba-9c10-4c20-b59b-88f9b55aad4f",
+  "drop": 190531,
+  "date": "2025-07-07T19:58:25.917000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8cac9c9b-b2b8-4696-b06c-fa52c63a5e01",
+  "drop": 190523,
+  "date": "2025-07-07T20:07:32.566000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "06c1fb3b-325a-4500-8fe2-12821a9712ea",
+  "drop": 190523,
+  "date": "2025-07-07T20:09:32.686000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e4621d53-4ca6-4431-ad0c-bde7cf4ab052",
+  "drop": 190523,
+  "date": "2025-07-07T20:12:02.035000+00:00",
+  "author": "0x468a3ccd88ce1258abb09688a5e3a2a2ebf9aad0",
+  "author_label": "0x468a…aad0",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "35f1209b-25da-454a-aa47-2723ed91fb18",
+  "drop": 190546,
+  "date": "2025-07-20T13:31:53.314000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "71ca6ee7-adf9-454e-972f-eefddc648448",
+  "drop": 190531,
+  "date": "2025-07-20T13:32:07.165000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3075d49d-5085-4f4e-836c-86d3c3e942f9",
+  "drop": 190530,
+  "date": "2025-07-20T13:32:44.411000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "477c773c-f6e6-4b2e-b1bb-cc3a154ff1c9",
+  "drop": 190539,
+  "date": "2025-07-20T13:33:19.999000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f5fc74cd-d647-4ba2-be44-4a508eafbd8f",
+  "drop": 190518,
+  "date": "2025-07-20T13:34:46.033000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "cc5c2ae3-5f24-45b2-b2b6-eb08c31874df",
+  "drop": 190520,
+  "date": "2025-07-20T13:35:08.345000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "fe3179d5-e911-4497-9250-ce572005b304",
+  "drop": 190516,
+  "date": "2025-07-20T13:35:26.651000+00:00",
+  "author": "0x018a6cc8f0b0ae5a686f926b62a67bbdcab33c47",
+  "author_label": "quinnchrest.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "baa0391d-29e6-43bc-80ec-01c90df3fee2",
+  "drop": 194309,
+  "date": "2025-08-03T11:43:06.519000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Our tickets to go into Magnifico’s Circus. Don’t be late!",
+  "media": 1
+ },
+ {
+  "id": "60c15880-9dc9-48d8-99a6-f68e06a7b1dc",
+  "drop": 194309,
+  "date": "2025-08-03T11:44:34.379000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Ready for the circus!",
+  "media": 1
+ },
+ {
+  "id": "ed69e052-2f02-41ec-bad5-41da37b0baa8",
+  "drop": 194309,
+  "date": "2025-08-03T11:45:37.348000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "After completing the circus. Amazing!",
+  "media": 1
+ },
+ {
+  "id": "06494cf7-185c-43cf-9044-f61ba3db58ef",
+  "drop": 194309,
+  "date": "2025-08-03T11:46:28.023000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Photo with the cast! Magnifico!",
+  "media": 1
+ },
+ {
+  "id": "eccfe62f-d37b-45d7-ae87-583659bfd23a",
+  "drop": 194498,
+  "date": "2025-08-04T01:57:58.802000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c11a64e3-e7ad-4d94-87e9-5ed6568d611c",
+  "drop": 190528,
+  "date": "2025-08-10T21:10:26.962000+00:00",
+  "author": "0x27c911e0a7c22eb489b027e3342f3199ff29acad",
+  "author_label": "0x27c9…acad",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "153f2f55-caf7-4138-8ee1-8c5ed892804d",
+  "drop": 190543,
+  "date": "2025-08-17T16:58:17.583000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "b4a8da55-1b31-4563-92aa-e461860dcd95",
+  "drop": 190543,
+  "date": "2025-08-17T17:01:23.044000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "66e9b127-e20a-4da7-a62a-9f25529f901e",
+  "drop": 190540,
+  "date": "2025-08-17T17:16:48.018000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f3f8cf29-75ce-47c2-8547-ae5edb705fc4",
+  "drop": 190540,
+  "date": "2025-08-17T17:17:15.858000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0a977d02-9dc9-4fd1-9310-e2da2f3e2675",
+  "drop": 190527,
+  "date": "2025-08-17T17:42:55.174000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "44150e2c-4b55-4bcc-9fee-ae93c1eddb6b",
+  "drop": 190527,
+  "date": "2025-08-17T17:43:48.360000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e1e6782d-4d5a-4849-bda6-b83780b7c4db",
+  "drop": 190534,
+  "date": "2025-08-17T17:59:25.456000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "eeba20e4-f6f5-4efc-bc5f-bcd5f3a49e0f",
+  "drop": 190534,
+  "date": "2025-08-17T18:00:50.139000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Quick stop for this one.",
+  "media": 1
+ },
+ {
+  "id": "0b462d90-08b3-4152-8579-3cf934fb2752",
+  "drop": 190527,
+  "date": "2025-08-22T18:41:25.876000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0ea4594b-5f52-4dbf-ae67-dd1770e904ac",
+  "drop": 190549,
+  "date": "2025-08-26T00:48:25.775000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "First time I’ve ever been here!",
+  "media": 1
+ },
+ {
+  "id": "5d67ff72-3032-4e85-ae16-aec4350464c2",
+  "drop": 190549,
+  "date": "2025-08-26T00:48:40.062000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f99d8ded-3bf7-4835-9598-513704929892",
+  "drop": 190549,
+  "date": "2025-08-26T00:48:41.029000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "6b99c9d4-8104-474f-90cf-3dbe2e3443ad",
+  "drop": 190549,
+  "date": "2025-08-26T00:50:40.861000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "4b3d4d45-f42a-4290-b19b-dae8718f304b",
+  "drop": 190549,
+  "date": "2025-08-26T00:51:15.262000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "b1d84a67-bb2a-40ea-8abc-6d3a7c27fef7",
+  "drop": 190545,
+  "date": "2025-08-26T01:05:02.310000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "dfedbc99-cec1-4493-9f49-a0feb4a11c74",
+  "drop": 190545,
+  "date": "2025-08-26T01:05:57.552000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8d6cf20c-711b-49a0-94b3-01d07007223d",
+  "drop": 190545,
+  "date": "2025-08-26T01:07:07.776000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "7aab0ee5-af55-41fc-a41d-ae4d6c30ba07",
+  "drop": 190547,
+  "date": "2025-08-26T01:16:19.482000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "4583324a-6939-4be8-b939-a6808ab4189d",
+  "drop": 190536,
+  "date": "2025-08-26T01:30:46.697000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3a2d5024-a595-4cfc-9c93-876c5ed1e550",
+  "drop": 190540,
+  "date": "2025-08-26T14:05:58.814000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0e36a2a8-3fd5-46df-a809-10d4bbaf4e78",
+  "drop": 190531,
+  "date": "2025-08-26T23:18:15.867000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1c715948-408d-46ea-bd5d-63a76fdc21b5",
+  "drop": 190528,
+  "date": "2025-08-30T16:48:36.951000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "58b24c05-1d89-4c6e-aec7-e4fbf47985b7",
+  "drop": 190528,
+  "date": "2025-08-30T16:48:48.937000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5f68b520-7841-4a1a-82ca-a075295ec535",
+  "drop": 190528,
+  "date": "2025-08-30T16:49:45.257000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "7394ebc5-a266-4425-bc73-e4324c81c273",
+  "drop": 190528,
+  "date": "2025-08-30T16:49:48.962000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "bde0cbf7-e7a9-406e-88ec-7fec0e5230a9",
+  "drop": 190528,
+  "date": "2025-08-30T16:50:16.628000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "First POAP of 612 challenge",
+  "media": 1
+ },
+ {
+  "id": "78797192-06dd-4c36-acc5-eacb41e38fba",
+  "drop": 190528,
+  "date": "2025-08-30T16:53:50.098000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c7a9d76e-2840-43f6-a9e7-a93d19428f1e",
+  "drop": 190528,
+  "date": "2025-08-30T16:54:33.412000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8138cefb-e534-433e-909e-2d7e75f38af3",
+  "drop": 190544,
+  "date": "2025-08-30T17:02:16.643000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ec2aaa25-18ea-4a9e-8551-57e466a111c3",
+  "drop": 190544,
+  "date": "2025-08-30T17:02:22.753000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "06862d45-4896-4894-9b74-e214d927510a",
+  "drop": 190544,
+  "date": "2025-08-30T17:02:50.452000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "2nd",
+  "media": 1
+ },
+ {
+  "id": "f902c027-5a58-4059-8e58-ddd04b93311a",
+  "drop": 190544,
+  "date": "2025-08-30T17:02:52.852000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f8216073-42f2-42a2-b638-6d95e3c34c37",
+  "drop": 190544,
+  "date": "2025-08-30T17:03:34.233000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "LIVING IT UP! 🙌🏻",
+  "media": 1
+ },
+ {
+  "id": "b95ab2d4-231e-48bc-b196-aaa306c48f4e",
+  "drop": 190544,
+  "date": "2025-08-30T17:03:38.303000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3f910dfc-ddbd-47ef-b14b-fc8fb5c676fe",
+  "drop": 190544,
+  "date": "2025-08-30T17:04:15.596000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "91b745b4-f173-4c57-9d52-3fe793e81fe9",
+  "drop": 190532,
+  "date": "2025-08-30T17:05:22.609000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ab5744a0-af96-48b3-b858-b51f1cbb336f",
+  "drop": 190532,
+  "date": "2025-08-30T17:05:47.602000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "3rd",
+  "media": 1
+ },
+ {
+  "id": "e3e7f749-3440-49db-a7ca-9554ca335387",
+  "drop": 190532,
+  "date": "2025-08-30T17:05:53.801000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "MOTHER GOOSE AND I 🪿",
+  "media": 1
+ },
+ {
+  "id": "8de59656-15e8-47bc-a18d-08fb39969fb1",
+  "drop": 190532,
+  "date": "2025-08-30T17:05:58.336000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f1fb3c0e-29dc-408b-b5eb-f588f7a8e0a0",
+  "drop": 190532,
+  "date": "2025-08-30T17:06:10.065000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0881f931-479d-48dc-b5a3-38e4bcbfebda",
+  "drop": 190532,
+  "date": "2025-08-30T17:06:15.962000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "4a5ec0db-f9b7-4cdc-a516-5275ac7e88b5",
+  "drop": 190544,
+  "date": "2025-08-30T17:08:20.963000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Farmers Market today!",
+  "media": 1
+ },
+ {
+  "id": "d843332b-c829-4d83-9594-31a7b9557289",
+  "drop": 190897,
+  "date": "2025-08-30T17:21:47.505000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "🧍🏼🧍🏼‍♂️",
+  "media": 1
+ },
+ {
+  "id": "ffa56fe6-20d5-4584-bd7b-1e022c102e08",
+  "drop": 190897,
+  "date": "2025-08-30T17:24:11.474000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "Banh Sizzle Fusion Rocket Rolls 🇻🇳 crepe",
+  "media": 1
+ },
+ {
+  "id": "bb6d3e96-52a9-44d7-a1cb-5457790a6720",
+  "drop": 190522,
+  "date": "2025-08-30T18:23:41.692000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "😛",
+  "media": 1
+ },
+ {
+  "id": "78d54354-a06b-4e76-afdf-ce4fa7ab31d7",
+  "drop": 190522,
+  "date": "2025-08-30T18:25:31.075000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "71f61427-49d5-4bc2-8e8d-8a04940e4142",
+  "drop": 190522,
+  "date": "2025-08-30T18:25:33.247000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "00d31797-8a5b-4d1f-b426-18716860d2fa",
+  "drop": 190522,
+  "date": "2025-08-30T18:25:49.131000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "b5279185-1048-4f4f-84c8-529917bd0268",
+  "drop": 190522,
+  "date": "2025-08-30T18:26:13.589000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3bbe47a8-c6ab-4653-8934-d676b734e371",
+  "drop": 190522,
+  "date": "2025-08-30T18:29:47.737000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "a3611463-3c0e-42b1-8ffc-82c075f18551",
+  "drop": 190524,
+  "date": "2025-08-30T18:31:38.542000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "🐽",
+  "media": 1
+ },
+ {
+  "id": "bacbbb18-1d52-4bc8-9066-daaa9f73e83e",
+  "drop": 190524,
+  "date": "2025-08-30T18:32:00.320000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "71a491b5-9db1-45ac-bd5f-cc7fa00b1b67",
+  "drop": 190524,
+  "date": "2025-08-30T18:32:07.200000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "baffcb64-6733-4c71-b4c1-5ff5a21396b4",
+  "drop": 190524,
+  "date": "2025-08-30T18:39:05.228000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "511b0743-22cf-4596-92d0-821caec8486d",
+  "drop": 190518,
+  "date": "2025-08-30T18:43:37.646000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c310d505-d2cc-46d2-84d2-cf7f91f64237",
+  "drop": 190518,
+  "date": "2025-08-30T18:44:00.047000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "👁️👧",
+  "media": 1
+ },
+ {
+  "id": "41216de0-da1a-4808-baf9-f17fbfde706e",
+  "drop": 190523,
+  "date": "2025-08-30T18:45:11.039000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8171a7f6-6ab8-41eb-8159-7bf8d655fb08",
+  "drop": 190523,
+  "date": "2025-08-30T18:45:12.803000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "69f00c76-1246-484b-87dd-a18c4951d418",
+  "drop": 190523,
+  "date": "2025-08-30T18:45:22.901000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "eda4989a-4f80-4e19-b0d9-3ea2f75cc9a8",
+  "drop": 190523,
+  "date": "2025-08-30T18:45:29.265000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0b68a5da-ca66-4f86-9aa3-b9ee8e9fbe55",
+  "drop": 190521,
+  "date": "2025-08-30T18:45:32.587000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "a467326f-b1aa-469e-b032-4403b5c91f11",
+  "drop": 190521,
+  "date": "2025-08-30T18:47:26.104000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "389b62a3-1063-47dc-b740-98e54f319357",
+  "drop": 190521,
+  "date": "2025-08-30T18:47:29.922000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "525cc4cf-e0a4-4826-acc1-89fcc98137cd",
+  "drop": 190521,
+  "date": "2025-08-30T18:47:38.630000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c06c462f-33ad-400d-a475-2680aa8d2096",
+  "drop": 190521,
+  "date": "2025-08-30T18:48:16.690000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "190fa18c-8750-46c1-aca9-70515a15588f",
+  "drop": 190521,
+  "date": "2025-08-30T18:49:17.955000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "a4ef2ae0-4e3f-420c-ba19-286f3679e8a1",
+  "drop": 190521,
+  "date": "2025-08-30T18:49:51.046000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c4d79d4c-7e0e-4a59-9bee-266cc316375c",
+  "drop": 190521,
+  "date": "2025-08-30T18:50:12.320000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "13504d6c-c26a-4d6f-8339-051d7586e922",
+  "drop": 190521,
+  "date": "2025-08-30T18:50:29.136000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1debf5db-48f0-44e2-b62c-26a5082cec8d",
+  "drop": 190531,
+  "date": "2025-08-30T18:52:20.028000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "fa269c8e-bd08-4c59-bedc-50514502e6c8",
+  "drop": 190531,
+  "date": "2025-08-30T18:53:11.590000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "9a487731-e3c7-4751-9f28-289cba673048",
+  "drop": 190531,
+  "date": "2025-08-30T18:53:30.313000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "0c575881-3b11-437b-9e9a-d74fa1fab4e7",
+  "drop": 190531,
+  "date": "2025-08-30T18:53:39.073000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "083f0d1d-ffbc-4f64-bfbd-3ce9b3dba75a",
+  "drop": 190531,
+  "date": "2025-08-30T18:53:42.317000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "⭐️⭐️⭐️",
+  "media": 1
+ },
+ {
+  "id": "99595dc5-6945-447f-b12b-cb807bb17d88",
+  "drop": 190531,
+  "date": "2025-08-30T18:55:33.152000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "031ddb35-12e3-49f9-bd9a-1a7cbd3859df",
+  "drop": 190531,
+  "date": "2025-08-30T18:57:20.397000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "55a8afc1-fa9c-47f2-bb17-72e194b0842d",
+  "drop": 190531,
+  "date": "2025-08-30T18:58:07.470000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "Nirvana",
+  "media": 1
+ },
+ {
+  "id": "9b5abac1-4c89-45eb-8df1-41d2af29b34c",
+  "drop": 190516,
+  "date": "2025-08-30T19:03:50.692000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "8713e9dd-ea51-4b09-a16b-f726f6f58769",
+  "drop": 190516,
+  "date": "2025-08-30T19:03:53.071000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c4302b96-3f71-4cdc-9d0b-53584c49de8f",
+  "drop": 190516,
+  "date": "2025-08-30T19:03:56.515000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5b2862d2-10f1-4ca6-8dd8-c93c3aedd831",
+  "drop": 190530,
+  "date": "2025-08-30T19:26:28.263000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5599721d-8278-4ee3-acad-56b6b08109c8",
+  "drop": 190530,
+  "date": "2025-08-30T19:26:59.857000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ae4d5d1b-1040-4d45-99c9-ce92b4cdeaab",
+  "drop": 190530,
+  "date": "2025-08-30T19:27:22.213000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c775caa4-c19c-44e9-88ad-53bd3af882c7",
+  "drop": 190530,
+  "date": "2025-08-30T19:27:41.322000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "803ea102-42f7-4118-86a1-8228250bbff8",
+  "drop": 190530,
+  "date": "2025-08-30T19:28:03.601000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "Spoon and Cherry",
+  "media": 1
+ },
+ {
+  "id": "d8182f87-7e73-42af-8684-a135cf2eeb17",
+  "drop": 190530,
+  "date": "2025-08-30T19:30:23.575000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "aae391ed-569c-4576-99e6-1aef1c6f7265",
+  "drop": 190530,
+  "date": "2025-08-30T19:30:31.277000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "11f8af10-8d0a-420c-a2c2-119293dc1a97",
+  "drop": 190535,
+  "date": "2025-08-30T19:36:51.929000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3e27a0c9-f937-4e72-9d49-20bd7c133214",
+  "drop": 190535,
+  "date": "2025-08-30T19:37:41.779000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "Threes a cloud ☁️",
+  "media": 1
+ },
+ {
+  "id": "92011d40-4806-4eb4-8cef-5e2d053ff715",
+  "drop": 190535,
+  "date": "2025-08-30T19:38:02.296000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "bb4791f1-5e3b-46d6-9fef-c50de298ce36",
+  "drop": 190535,
+  "date": "2025-08-30T19:38:18.543000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "869166f7-5bed-4af3-a93f-96f48604c661",
+  "drop": 190535,
+  "date": "2025-08-30T19:39:58.826000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e945c418-0ab5-46b2-8431-574ceaea054c",
+  "drop": 190535,
+  "date": "2025-08-30T20:24:20.405000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3d982738-8a79-4e2b-bd73-d4e0d9f82568",
+  "drop": 190533,
+  "date": "2025-08-30T20:25:52.744000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "9452db04-e963-460e-8dc9-ea0073b7545f",
+  "drop": 190533,
+  "date": "2025-08-30T20:26:08.047000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Last one!",
+  "media": 1
+ },
+ {
+  "id": "f8f7abbc-1552-46c3-949a-e442798c6deb",
+  "drop": 190533,
+  "date": "2025-08-30T20:26:16.413000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1527472b-9b27-406e-99c3-1a3ca458067a",
+  "drop": 190533,
+  "date": "2025-08-30T20:28:01.929000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "b325fdb9-3881-4536-9726-96f88bc86c3e",
+  "drop": 190533,
+  "date": "2025-08-30T20:32:36.742000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "530d5955-8aca-4dfb-a709-5994ffdcb692",
+  "drop": 190539,
+  "date": "2025-08-30T23:02:21.483000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "d1915458-9e14-48b6-bc75-4031e9b57f6a",
+  "drop": 190539,
+  "date": "2025-08-30T23:09:11.048000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "Family bike ride around Lake Harriet!",
+  "media": 1
+ },
+ {
+  "id": "3ce0e123-e750-4a74-9663-82c1c7936030",
+  "drop": 190539,
+  "date": "2025-08-30T23:41:02.003000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "286e6425-91f1-4028-a75f-6a5340479f3f",
+  "drop": 199622,
+  "date": "2025-08-31T14:50:24.662000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "02cbc36c-cb2d-419a-9205-b481738697e0",
+  "drop": 199622,
+  "date": "2025-08-31T14:51:31.482000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3825a609-82ae-4e72-8ac1-e5fd3887ca8a",
+  "drop": 199622,
+  "date": "2025-08-31T14:52:02.719000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "4d1539fe-57c3-4d7c-9698-dfb514a73c79",
+  "drop": 199622,
+  "date": "2025-08-31T19:46:00.825000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c3036a03-a9f2-48fb-adae-3e1f366791c2",
+  "drop": 199622,
+  "date": "2025-08-31T20:34:57.717000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f474e3a6-7be9-4700-8cbe-4019a2006d57",
+  "drop": 190325,
+  "date": "2025-08-31T23:09:39.632000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "02e17761-6b2d-4f13-82de-51618c22a675",
+  "drop": 190337,
+  "date": "2025-08-31T23:11:28.957000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5bcf7853-79db-4574-849e-e2d682292b82",
+  "drop": 190325,
+  "date": "2025-09-01T00:32:32.215000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1b41987c-9067-4895-aef4-7e5c07e8c703",
+  "drop": 190337,
+  "date": "2025-09-01T00:34:08.699000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "2b654145-81f6-4cb8-82df-affe930c7095",
+  "drop": 190325,
+  "date": "2025-09-01T01:06:05.368000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "✏️sketch party! ✏️",
+  "media": 1
+ },
+ {
+  "id": "16850d6a-c54d-4127-aa5e-0fb02189d70b",
+  "drop": 190520,
+  "date": "2025-09-01T15:51:55.430000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": "Andrew drove us to the Foshay!!!",
+  "media": 1
+ },
+ {
+  "id": "cc056f0b-4bd2-4bc7-bb62-de14893d7eb8",
+  "drop": 190520,
+  "date": "2025-09-01T15:59:11.114000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "43fd7bb2-c15e-43de-8b83-d60d5fe05a6c",
+  "drop": 190517,
+  "date": "2025-09-01T16:14:31.970000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3e14641a-7d69-4afc-a3a5-07c94ee4e799",
+  "drop": 190517,
+  "date": "2025-09-01T16:14:32.758000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "c7608b4d-23f6-4527-a70c-3b16f1e21898",
+  "drop": 190517,
+  "date": "2025-09-01T16:14:33.930000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "edd458d0-f620-47c7-8208-94cc00e0d107",
+  "drop": 190517,
+  "date": "2025-09-01T16:14:58.725000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ac16d8da-836d-4bab-bcf2-a5254a777696",
+  "drop": 190526,
+  "date": "2025-09-01T17:50:58.914000+00:00",
+  "author": "0xc90e4710db4ba02bdde29e3bd64b4465bf38edd4",
+  "author_label": "lucky.thingelstad.eth",
+  "by_jamie": false,
+  "text": "Watching players walk to bridge.",
+  "media": 1
+ },
+ {
+  "id": "47f23614-975b-46ec-b807-0ac16e312614",
+  "drop": 190526,
+  "date": "2025-09-01T17:51:38.931000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5cd146df-6ada-463d-9e5b-58bd2782f92c",
+  "drop": 190526,
+  "date": "2025-09-01T17:52:21.638000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e360f009-a045-455d-983b-d9b2fbccd1f3",
+  "drop": 190526,
+  "date": "2025-09-01T17:52:51.213000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "67556a17-9ab7-408b-afc8-2e5d2d460eed",
+  "drop": 190526,
+  "date": "2025-09-01T17:53:23.916000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "a273a255-9ccd-43c0-b4de-6d3800df4424",
+  "drop": 190517,
+  "date": "2025-09-01T18:09:20.055000+00:00",
+  "author": "0xc90e4710db4ba02bdde29e3bd64b4465bf38edd4",
+  "author_label": "lucky.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "ba26114a-0d52-499a-99f8-f2200ad349dd",
+  "drop": 190546,
+  "date": "2025-09-01T18:09:34.141000+00:00",
+  "author": "0xc90e4710db4ba02bdde29e3bd64b4465bf38edd4",
+  "author_label": "lucky.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "b45011ef-fca2-41e1-9354-caf58038c182",
+  "drop": 190517,
+  "date": "2025-09-01T18:10:15.375000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5d032282-fead-44fd-a179-3b36eec57905",
+  "drop": 190517,
+  "date": "2025-09-01T18:10:23.149000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "6e247ec2-26b6-4cc2-83c7-0392d9c987fa",
+  "drop": 190520,
+  "date": "2025-09-01T18:12:23.168000+00:00",
+  "author": "0xc90e4710db4ba02bdde29e3bd64b4465bf38edd4",
+  "author_label": "lucky.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "036070d5-7450-4cf2-8899-2d82289dd8dd",
+  "drop": 190520,
+  "date": "2025-09-01T18:13:38.808000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "7737f175-8f6f-440a-aa47-df8a695c72fc",
+  "drop": 190520,
+  "date": "2025-09-01T18:14:16.125000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "7c4bff80-67b6-4be8-9c9f-2a2f01682fe1",
+  "drop": 190548,
+  "date": "2025-09-01T18:18:11.828000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "13e607df-6216-410e-b4ce-897315bc1689",
+  "drop": 190548,
+  "date": "2025-09-01T18:18:21.715000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "3d5086c9-cf45-452d-835b-10949d111ce5",
+  "drop": 190548,
+  "date": "2025-09-01T18:20:19.798000+00:00",
+  "author": "0xc90e4710db4ba02bdde29e3bd64b4465bf38edd4",
+  "author_label": "lucky.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "272d41b3-9ee0-44cc-a706-223fd5f84b73",
+  "drop": 190529,
+  "date": "2025-09-01T18:26:24.957000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "76c0dd8a-6a41-427f-8a29-aed11d58ec13",
+  "drop": 190529,
+  "date": "2025-09-01T18:27:01.947000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "cd2c3150-baa5-4c98-9147-8d0613552e31",
+  "drop": 190529,
+  "date": "2025-09-01T18:28:40.694000+00:00",
+  "author": "0xf1c562ebc3ab6221a1f0e10a94a1e484efd1508e",
+  "author_label": "tammy.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "19d89761-c6f4-410e-9b7d-dd31c08f4e93",
+  "drop": 190529,
+  "date": "2025-09-01T18:28:47.161000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "2d376277-d98e-4e61-85fc-33c89f3ec76c",
+  "drop": 190534,
+  "date": "2025-09-01T18:39:53.044000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "068076aa-1fd1-41dd-9782-d15d4a584325",
+  "drop": 190534,
+  "date": "2025-09-01T18:40:36.688000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "d662fb09-ee47-4fb4-85a8-035a474e0141",
+  "drop": 190534,
+  "date": "2025-09-01T18:41:52.518000+00:00",
+  "author": "0xc90e4710db4ba02bdde29e3bd64b4465bf38edd4",
+  "author_label": "lucky.thingelstad.eth",
+  "by_jamie": false,
+  "text": "Out collecting POAPs with my family.",
+  "media": 1
+ },
+ {
+  "id": "9a833b4b-dc4c-4c53-92cb-cd1945a011f5",
+  "drop": 190534,
+  "date": "2025-09-01T19:08:30.340000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "5edf0722-fadd-474e-abf7-34d07e70ebe7",
+  "drop": 190534,
+  "date": "2025-09-01T19:09:01.064000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": "# Done POAPing for the day",
+  "media": 1
+ },
+ {
+  "id": "1310d54d-719e-48b3-820a-893b62232251",
+  "drop": 190898,
+  "date": "2025-09-01T19:35:33.602000+00:00",
+  "author": "0x8c45420a012c9db585a8b7aca874e4c485d7ce24",
+  "author_label": "0x8c45…ce24",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "18f4fd35-b112-40c3-80c8-2b32a48eaaa1",
+  "drop": 190898,
+  "date": "2025-09-01T19:44:27.584000+00:00",
+  "author": "0xe8eb6ab2cdebda21a5b58abfcc2f1fbc82ca8ce4",
+  "author_label": "0xe8eb…8ce4",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "266974e0-a715-4192-9cd3-a7ce4de803fd",
+  "drop": 190898,
+  "date": "2025-09-01T20:49:51.158000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": "YAY",
+  "media": 1
+ },
+ {
+  "id": "90d08e14-a2e5-4c9a-82e6-babfe8011e42",
+  "drop": 206691,
+  "date": "2025-09-18T16:40:43.685000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Official event image!",
+  "media": 1
+ },
+ {
+  "id": "4ebe1f5c-bec4-482f-8032-d5a324492e5e",
+  "drop": 220381,
+  "date": "2026-01-01T23:37:41.725000+00:00",
+  "author": "0x197e6ff938c80ae931b02f02dac9aee96c54a443",
+  "author_label": "0x197e…a443",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "f2af6ecd-ae69-42d7-8f1c-a82388726346",
+  "drop": 220381,
+  "date": "2026-01-01T23:37:42.465000+00:00",
+  "author": "0x6493db62998997134e0451cacd32360858f9a3d6",
+  "author_label": "tyler.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "95a12c3f-7aec-497b-8899-1f17d52a400a",
+  "drop": 220381,
+  "date": "2026-01-03T16:24:41.499000+00:00",
+  "author": "0x203d26a56b716ef6074f55425fe3a112badb740a",
+  "author_label": "0x203d…740a",
+  "by_jamie": false,
+  "text": "Celebrated Jamie’s birthday by finishing this awesome Lego set.",
+  "media": 1
+ },
+ {
+  "id": "949e83c2-030a-47fd-a8a0-7ae8aa4528d4",
+  "drop": 220381,
+  "date": "2026-01-03T16:47:07.130000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "dbf1ae44-d1f4-477a-a00f-c23b74c0772b",
+  "drop": 220381,
+  "date": "2026-01-04T01:03:39.454000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "Time for presents! 🎉🎁",
+  "media": 1
+ },
+ {
+  "id": "fb70e3b9-89d1-4a63-b3f7-5af08e701a80",
+  "drop": 222977,
+  "date": "2026-01-16T20:29:43.672000+00:00",
+  "author": "0x74dbbcb9c08c51b38510d130d928e1e8c68eda7c",
+  "author_label": "mazie.thingelstad.eth",
+  "by_jamie": false,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "e22f3743-986c-4bea-ac71-a7b0d4b7857c",
+  "drop": 225933,
+  "date": "2026-02-06T00:29:32.662000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "The beginning!",
+  "media": 1
+ },
+ {
+  "id": "8ce8bb35-73ce-4131-8170-a3fa04f98880",
+  "drop": 221803,
+  "date": "2026-02-17T17:24:58.393000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": "First location for me in the Airport Rally! ✈️",
+  "media": 1
+ },
+ {
+  "id": "23fa5d25-ff90-4452-8305-01a6677c1874",
+  "drop": 214928,
+  "date": "2026-02-17T21:00:25.806000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "1f99b515-fa17-4646-8f66-9ea0eb615989",
+  "drop": 226792,
+  "date": "2026-03-13T18:31:06.324000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "733f1bd0-8ef6-4b8d-a0df-a4762b7a66e6",
+  "drop": 214903,
+  "date": "2026-03-16T07:52:17.740000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ },
+ {
+  "id": "bad8bf9a-82b0-4d67-bd7c-64c8d8930f16",
+  "drop": 214892,
+  "date": "2026-03-29T07:04:23.348000+00:00",
+  "author": "0x111accebf9d70d9c06de2d38f9392522e82ecf29",
+  "author_label": "poap.thingelstad.eth",
+  "by_jamie": true,
+  "text": null,
+  "media": 1
+ }
+]

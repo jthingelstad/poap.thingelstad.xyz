@@ -1,0 +1,9 @@
+src/** text eol=lf
+tools/** text eol=lf
+tests/** text eol=lf
+.github/** text eol=lf
+data/** -diff
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary

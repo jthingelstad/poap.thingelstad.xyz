@@ -1,0 +1,230 @@
+:root {
+  color-scheme: light;
+  --bg: #f7f5ef;
+  --ink: #1d1b16;
+  --mute: #6b665b;
+  --line: #e3dfd3;
+  --card: #fffdf8;
+  --focus: #1d1b16;
+  --collected: #2f6f8f;
+  --issued: #b4552d;
+  --spine: #7a6f3e;
+  font-family: -apple-system, system-ui, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  font-synthesis: none;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #16150f;
+  --ink: #efe9da;
+  --mute: #a39c8c;
+  --line: #2d2a21;
+  --card: #1f1d16;
+  --focus: #efe9da;
+  --collected: #7fb6d3;
+  --issued: #e58c5e;
+  --spine: #cbbd7a;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scrollbar-gutter: stable;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+button,
+select,
+input {
+  font: inherit;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--card);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+.site-header,
+.site-footer,
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
+}
+.wordmark {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.wordmark .mark {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 1.4rem;
+}
+.wordmark .expansion {
+  color: var(--mute);
+}
+.site-header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+.site-header nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--mute);
+}
+.site-header nav a:hover {
+  color: var(--ink);
+}
+.theme-toggle {
+  color: var(--mute);
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.1rem 0.7rem;
+}
+.site-footer {
+  color: var(--mute);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+.notice {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.kudos {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+.kudos::before {
+  content: '♥';
+  color: var(--mute);
+}
+.kudos.did_select::before,
+.kudos:hover::before {
+  color: var(--issued);
+}
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+.hero .mark {
+  font-size: clamp(4rem, 14vw, 8rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin: 0;
+}
+.hero h1 {
+  margin-top: 0.3rem;
+}
+.hero .sub,
+.dek {
+  color: var(--mute);
+  max-width: 52rem;
+  font-size: 1.1rem;
+}
+.totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin: 2rem 0;
+}
+.totals div {
+  font-size: 0.85rem;
+  color: var(--mute);
+}
+.totals b {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--ink);
+  line-height: 1.1;
+}
+.text-page {
+  max-width: 48rem;
+}
+.text-page h2 {
+  margin-top: 2.5rem;
+}
+.text-page table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.text-page td,
+.text-page th {
+  text-align: left;
+  padding: 0.3rem 0.8rem 0.3rem 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+code {
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+.text-page table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}

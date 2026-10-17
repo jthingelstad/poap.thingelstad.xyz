@@ -1,8 +1,17 @@
+.DS_Store
 node_modules/
-dist/
-_site/
-.build/
+__pycache__/
+*.pyc
 .env
 .env.*
 !.env.example
-.DS_Store
+dist/
+.astro/
+.build/
+# Published media is rendered here once (npm run media:build), uploaded by
+# tools/media.mjs and never part of the site build.
+media/
+coverage/
+playwright-report/
+test-results/
+.ruff_cache/

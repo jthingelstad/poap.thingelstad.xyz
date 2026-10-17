@@ -1,0 +1,27 @@
+{
+  "account": "999153317627",
+  "region": "us-east-1",
+  "stacks": {
+    "storage": "poap-storage",
+    "site": "poap-site",
+    "delivery": "poap-delivery",
+    "certificate": "poap-certificate"
+  },
+  "archiveBucket": "poap-storage-archive-999153317627",
+  "siteBucket": "poap-storage-web-999153317627",
+  "distributionId": null,
+  "cloudfrontDomain": null,
+  "deliveryUrl": null,
+  "productionUrl": "https://poap.thingelstad.xyz/",
+  "certificateArn": null,
+  "buildRoleArn": null,
+  "deploymentRoleArn": null,
+  "stackTags": {
+    "Application": "Thingelstad",
+    "Project": "poap",
+    "Repository": "jthingelstad/poap.thingelstad.xyz",
+    "ManagedBy": "cloudformation",
+    "Environment": "production"
+  },
+  "alarmTopic": "arn:aws:sns:us-east-1:999153317627:weekly-thing-librarian-alarms"
+}
