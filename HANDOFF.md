@@ -108,6 +108,10 @@ artwork.
 
 ## 5. Keep a copy of the export in the archive bucket
 
+Done 2026-10-17: `infra/dataset.json`. The export needs numpy and Pillow
+(`uv run --no-project --with numpy --with pillow -- python -I ...`); the network layout
+depends on the numpy version.
+
 Optional but in the nnxyz spirit. Pack `data/*.json` from the archive export:
 
 ```sh
@@ -123,10 +127,14 @@ and hash in `infra/dataset.json` in the site repo.
 
 ## 6. Moment photos from Photos
 
-The 79 photos Jamie attached to POAP Moments are gone upstream. The moments carry
-timestamps to the second in `data/moments.json` (`by_jamie: true`, `media > 0`). Export
-originals from the Mac's Photos library by date and match on time (within a minute, UTC
-in the data, local time in Photos). Put the matched files in a new media prefix,
+The 79 photos Jamie attached to POAP Moments are gone upstream. The moments keep only the
+upload time (`data/moments.json`, `by_jamie: true`, `media > 0`), and a photo is usually
+taken well before it is posted, so match on a window, not the minute. The Otto account's
+Photos library is empty and Jamie's account is closed to it (2026-10-17), so Jamie runs
+`scripts/find_moment_photos.py` in `poap-archive` on the Mac with the library. It reads
+Photos only and exports the nearest photos taken before each upload, with
+`candidates.csv`. Pick each match from the candidates (look at them; check with Jamie
+where unsure). Put the matched files in a new media prefix,
 `moments/<moment id>.<ext>`, add the prefix to `tools/delivery-plan.mjs`,
 `tools/validate-site.py`, `infra/delivery.json` and `tools/validate-infra.mjs` together
 (the infra change is a reviewed change set), publish with `media:publish`, and add a
@@ -134,6 +142,11 @@ in the data, local time in Photos). Put the matched files in a new media prefix,
 contract; do it in `poap-archive` first.
 
 ## 7. Merge the design branch in poap-archive
+
+Done 2026-10-17. The branch was cut from the history before the private notes were
+removed and carried `research/interactions-PRIVATE.md`, so its nine commits were
+replayed onto main without it and the branch was deleted. Never push a clone made before
+that rewrite.
 
 `jthingelstad/poap-archive` branch `design/time-capsule` holds `DESIGN.md`, the two
 prototypes under `capsule/`, `scripts/build_capsule.py`, `scripts/build_network.py` and
