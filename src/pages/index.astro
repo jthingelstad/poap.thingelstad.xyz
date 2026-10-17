@@ -38,14 +38,14 @@ const years = [...new Set(drops.map((d) => d.date.slice(0, 4)))].sort();
   <section class="text-page">
     <p class="dek">
       The first token was the ENS 4th Anniversary vote on{' '}
-      {first.minted.slice(0, 10)}. The last was {last.drop.name} on{' '}
-      {last.minted.slice(0, 10)}. Between them, drops in {years.length}
-      years, from {years[0]} to {years[years.length - 1]}.
+      {first.minted.slice(0, 10)}. The last was "{last.drop.name}" on{' '}
+      {last.minted.slice(0, 10)}. Between them, drops in {years.length} years,
+      from {years[0]} to {years[years.length - 1]}.
     </p>
     <p class="dek">
       The site is being built in the open. The timeline, the network, the drops
       and the people arrive page by page; the data behind them is complete and
-      lives in
+      lives in{' '}
       <a href="https://github.com/jthingelstad/poap-archive">poap-archive</a>.
     </p>
   </section>
