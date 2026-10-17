@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Tile from '../components/Tile.astro';
+import {
+  dropPath,
+  drops,
+  dropsByDate,
+  dropsOfSeries,
+  mints,
+  number,
+  people,
+  series,
+  seriesPath,
+} from '../lib/data';
+import { seriesText } from '../lib/content';
+
+const first = dropsByDate[0]!;
+const last = dropsByDate[dropsByDate.length - 1]!;
+const reserved = drops.reduce((n, d) => n + d.reserved, 0);
+const unminted = drops.filter((d) => !d.own_token);
+const longest = [...drops]
+  .filter((d) => d.first_mint && d.last_mint)
+  .map((d) => ({
+    d,
+    days: Math.round(
+      (Date.parse(d.last_mint!) - Date.parse(`${d.date}T00:00:00Z`)) /
+        86_400_000,
+    ),
+  }))
+  .sort((a, b) => b.days - a.days)
+  .slice(0, 5);
+---
+
+<Layout
+  title="Issued — Proof of a Person"
+  description={`The ${drops.length} POAP drops Jamie Thingelstad made, in nine series.`}
+>
+  <section class="text-page">
+    <h1>Issued</h1>
+    <p class="dek">
+      {number(drops.length)} drops Jamie made for other people, from{' '}
+      <a href={dropPath(first.id)}>{first.name}</a> on {first.date} to{' '}
+      <a href={dropPath(last.id)}>{last.name}</a> on {last.date}.
+    </p>
+    <div class="totals small">
+      <div>
+        <b>{number(drops.length)}</b>drops
+      </div>
+      <div>
+        <b>{number(mints.length)}</b>tokens minted by others
+      </div>
+      <div>
+        <b>{number(people.length)}</b>collectors
+      </div>
+      <div>
+        <b>{number(reserved)}</b>reserved by email, never minted
+      </div>
+    </div>
+    <p>
+      Drops sit at their event date. Some kept minting for months:{' '}
+      {longest.map(({ d, days }, i) => (
+        <>
+          {i > 0 && (i === longest.length - 1 ? ' and ' : ', ')}
+          <a href={dropPath(d.id)}>{d.name}</a> ({number(days)} days)
+        </>
+      ))}
+      .
+      {unminted.length > 0 && (
+        <>
+          {' '}
+          Jamie never minted{' '}
+          {unminted.map((d, i) => (
+            <>
+              {i > 0 && (i === unminted.length - 1 ? ' or ' : ', ')}
+              <a href={dropPath(d.id)}>{d.name}</a>
+            </>
+          ))}
+          .
+        </>
+      )}
+    </p>
+  </section>
+
+  {series.map((s) => {
+    const list = dropsOfSeries(s.slug);
+    const minted = list.reduce((n, d) => n + d.mints, 0);
+    return (
+      <section class="series-block" style={`--series: ${s.color}`}>
+        <h2 class="series-title">
+          <a href={seriesPath(s.slug)}>{s.label}</a>{' '}
+          <small>
+            {number(list.length)} drops · {number(minted)} minted
+          </small>
+        </h2>
+        {seriesText[s.slug] && (
+          <p class="note">
+            {seriesText[s.slug]!.rawContent()
+              .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+              .replace(/\s+/g, ' ')
+              .trim()}
+          </p>
+        )}
+        <div class="tiles">
+          {list.map((drop) => (
+            <Tile
+              href={dropPath(drop.id)}
+              drop={drop}
+              caption={`${drop.date} · ${number(drop.mints)} minted`}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  })}
+</Layout>

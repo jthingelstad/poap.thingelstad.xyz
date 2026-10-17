@@ -1,0 +1,83 @@
+---
+// Cumulative mints against days since the event: a live event rises at once,
+// a tradition keeps a long tail. Static SVG; no script.
+import { type Mint, number } from '../lib/data';
+interface Props {
+  date: string;
+  mints: Mint[];
+}
+const { date, mints } = Astro.props;
+const width = 640,
+  height = 200,
+  pad = { left: 44, right: 12, top: 12, bottom: 30 };
+const event = Date.parse(`${date}T00:00:00Z`);
+const days = mints.map((m) => (Date.parse(m.minted) - event) / 86_400_000);
+const start = Math.min(0, Math.floor(days[0] ?? 0));
+const end = Math.max(start + 1, Math.ceil(days[days.length - 1] ?? 1));
+const x = (d: number) =>
+  pad.left + ((d - start) / (end - start)) * (width - pad.left - pad.right);
+const y = (n: number) =>
+  height -
+  pad.bottom -
+  (n / Math.max(1, mints.length)) * (height - pad.top - pad.bottom);
+const points = [`${x(start)},${y(0)}`];
+days.forEach((d, i) => {
+  points.push(`${x(d)},${y(i)}`, `${x(d)},${y(i + 1)}`);
+});
+points.push(`${x(end)},${y(mints.length)}`);
+const label = (d: number) =>
+  d === 0 ? 'event' : `${d > 0 ? '+' : ''}${number(d)} days`;
+const ticks = [start, end];
+if (x(0) - x(start) > 70 && x(end) - x(0) > 70) ticks.splice(1, 0, 0);
+const within = days.filter((d) => d >= -1 && d <= 7).length;
+---
+
+<figure class="mint-curve">
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    role="img"
+    aria-label={`${number(mints.length)} mints over ${number(end - start)} days; ${number(within)} within a week of the event`}
+  >
+    <line
+      class="axis"
+      x1={pad.left}
+      y1={height - pad.bottom}
+      x2={width - pad.right}
+      y2={height - pad.bottom}
+    ></line>
+    <line
+      class="axis"
+      x1={pad.left}
+      y1={pad.top}
+      x2={pad.left}
+      y2={height - pad.bottom}
+    ></line>
+    <line
+      class="event"
+      x1={x(0)}
+      y1={pad.top}
+      x2={x(0)}
+      y2={height - pad.bottom}
+    ></line>
+    <polyline points={points.join(' ')}></polyline>
+    {ticks.map((d) => (
+      <text
+        x={x(d)}
+        y={height - 10}
+        text-anchor={d === start ? 'start' : d === end ? 'end' : 'middle'}
+      >
+        {label(d)}
+      </text>
+    ))}
+    <text x={pad.left - 6} y={pad.top + 10} text-anchor="end">
+      {number(mints.length)}
+    </text>
+    <text x={pad.left - 6} y={height - pad.bottom} text-anchor="end">
+      0
+    </text>
+  </svg>
+  <figcaption>
+    Cumulative mints by day from the event date. {number(within)} of{' '}
+    {number(mints.length)} came within a week of it.
+  </figcaption>
+</figure>

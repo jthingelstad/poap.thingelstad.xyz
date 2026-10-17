@@ -1,0 +1,18 @@
+---
+// One drop in a grid: thumbnail, name and a caption, linking to its page.
+import Art from './Art.astro';
+interface Props {
+  href: string;
+  drop: { id: number; artwork: string; animated: boolean; name: string };
+  caption?: string;
+}
+const { href, drop, caption } = Astro.props;
+---
+
+<a class="tile" href={href}>
+  <Art drop={drop} />
+  <span>
+    <b>{drop.name}</b>
+    {caption && <small>{caption}</small>}
+  </span>
+</a>

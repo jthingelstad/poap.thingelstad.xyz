@@ -1,0 +1,185 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import DropCard from '../../components/DropCard.astro';
+import TokenCard from '../../components/TokenCard.astro';
+import Spine from '../../components/Spine.astro';
+import {
+  type Drop,
+  type Token,
+  day,
+  number,
+  seriesPath,
+  yearPath,
+  years,
+} from '../../lib/data';
+import { chapters } from '../../lib/content';
+import { type SpineItem, type Year, split612, yearData } from '../../lib/years';
+
+export function getStaticPaths() {
+  return yearData.map((y) => ({ params: { year: y.year }, props: { y } }));
+}
+interface Props {
+  y: Year;
+}
+const { y } = Astro.props;
+const chapter = chapters[y.year]!.frontmatter;
+const left = split612(y.left, (t) => t.drop.name);
+const right = split612(y.right, (d) => d.name);
+
+// Rows are days: a token, a post and a drop on the same day read as one moment.
+// The 612 POAP Challenge is one group per side, at its first day.
+type Row = {
+  left: (Token | '612')[];
+  spine: SpineItem[];
+  right: (Drop | '612')[];
+};
+const rows = new Map<string, Row>();
+const row = (date: string) => {
+  const key = day(date);
+  if (!rows.has(key)) rows.set(key, { left: [], spine: [], right: [] });
+  return rows.get(key)!;
+};
+for (const t of left.rest) row(t.minted).left.push(t);
+for (const s of y.spine) row(s.date).spine.push(s);
+for (const d of right.rest) row(d.date).right.push(d);
+const leftFrom = left.challenge[0]?.minted;
+const leftTo = left.challenge[left.challenge.length - 1]?.minted;
+if (leftFrom) row(leftFrom).left.push('612');
+const rightDate = right.challenge[0]?.date;
+const rightMints = right.challenge.reduce((n, d) => n + d.mints, 0);
+if (rightDate) row(rightDate).right.push('612');
+const days = [...rows.entries()].sort(([a], [b]) => (a < b ? -1 : 1));
+const index = years.indexOf(y.year);
+const previous = years[index - 1];
+const next = years[index + 1];
+---
+
+<Layout
+  title={`${y.year}: ${chapter.title} — Proof of a Person`}
+  description={`Jamie Thingelstad's POAP year ${y.year}: ${y.left.length} tokens collected from others, ${y.right.length} drops issued, ${y.mints} mints by other people.`}
+>
+  <nav class="years" aria-label="Years">
+    <a href="/timeline/">All years</a>
+    {years.map((other) => (
+      <a
+        href={yearPath(other)}
+        aria-current={other === y.year ? 'page' : undefined}
+      >
+        {other}
+      </a>
+    ))}
+  </nav>
+  <section class="chapter">
+    <h1>
+      {y.year} <small>{chapter.title}</small>
+    </h1>
+    <div class="n">
+      <span>
+        <b>{number(y.left.length)}</b> collected from others
+      </span>
+      <span>
+        <b>{number(y.right.length)}</b> drops issued
+      </span>
+      <span>
+        <b>{number(y.mints)}</b> mints by <b>{number(y.minters)}</b> people
+      </span>
+      <span>
+        <b>{number(y.writing)}</b> posts and issues
+      </span>
+    </div>
+    <blockquote>
+      “{chapter.quote}”
+      <cite>
+        <a href={chapter.url}>{chapter.cite}</a>
+      </cite>
+    </blockquote>
+  </section>
+  <div class="legend">
+    <span>
+      <i class="collected"></i>collected from others
+    </span>
+    <span>
+      <i class="spine-dot"></i>Jamie's writing
+    </span>
+    <span>
+      <i class="world"></i>POAP the company
+    </span>
+    <span>
+      <i class="issued"></i>drops Jamie made
+    </span>
+  </div>
+  <div class="cols">
+    <div class="colhead l">Collected</div>
+    <div class="colhead s">Writing</div>
+    <div class="colhead r">Issued</div>
+    {days.map(([date, r]) => (
+      <div class="day" data-date={date}>
+        <div class="l">
+          {r.left.map((t) =>
+            t === '612' ? (
+              <details class="card group collected">
+                <summary>
+                  <b>
+                    612 POAP Challenge: Jamie's own {left.challenge.length}{' '}
+                    visits
+                  </b>
+                  <span>
+                    {day(leftFrom)} to {day(leftTo)} · open to see each visit
+                  </span>
+                </summary>
+                {left.challenge.map((token) => (
+                  <TokenCard token={token} />
+                ))}
+              </details>
+            ) : (
+              <TokenCard token={t} />
+            ),
+          )}
+        </div>
+        <div class="s">
+          {r.spine.map((s) => (
+            <Spine item={s} />
+          ))}
+        </div>
+        <div class="r">
+          {r.right.map((d) =>
+            d === '612' ? (
+              <details class="card group issued">
+                <summary>
+                  <b>612 POAP Challenge: {right.challenge.length} drops</b>
+                  <span>
+                    {rightDate} · a summer scavenger hunt across Minneapolis,{' '}
+                    {number(rightMints)} tokens minted · open to see every place
+                  </span>
+                </summary>
+                <p class="group-link">
+                  <a href={seriesPath('612')}>The 612 POAP Challenge series</a>
+                </p>
+                {right.challenge.map((drop) => (
+                  <DropCard drop={drop} />
+                ))}
+              </details>
+            ) : (
+              <DropCard drop={d} />
+            ),
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+  <nav class="pager" aria-label="Previous and next year">
+    {previous ? <a href={yearPath(previous)}>← {previous}</a> : <span></span>}
+    {next && <a href={yearPath(next)}>{next} →</a>}
+  </nav>
+  <script>
+    // A link to a drop inside the 612 group opens the group first.
+    const target = location.hash
+      ? document.getElementById(location.hash.slice(1))
+      : null;
+    const group = target?.closest('details');
+    if (group) {
+      group.open = true;
+      target!.scrollIntoView();
+    }
+  </script>
+</Layout>

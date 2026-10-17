@@ -1,0 +1,45 @@
+---
+// Drop artwork from the published media. Thumbnails use the WebP stills; the
+// large view shows the original GIF when the art is animated.
+import { artUrl, rasterSrcset, rasterUrl } from '../lib/media';
+interface Props {
+  drop: { id: number; artwork: string; animated: boolean; name: string };
+  large?: boolean;
+  alt?: string;
+}
+const { drop, large = false, alt = '' } = Astro.props;
+---
+
+{large ? (
+  drop.animated ? (
+    <img
+      class="art large"
+      src={artUrl(drop.artwork)}
+      alt={alt || drop.name}
+      width="420"
+      height="420"
+    />
+  ) : (
+    <img
+      class="art large"
+      src={rasterUrl(drop.id, 640)}
+      srcset={rasterSrcset(drop.id)}
+      sizes="(max-width: 600px) 80vw, 420px"
+      alt={alt || drop.name}
+      width="420"
+      height="420"
+    />
+  )
+) : (
+  <img
+    class="art"
+    src={rasterUrl(drop.id, 160)}
+    srcset={rasterSrcset(drop.id)}
+    sizes="56px"
+    alt={alt}
+    width="56"
+    height="56"
+    loading="lazy"
+    decoding="async"
+  />
+)}

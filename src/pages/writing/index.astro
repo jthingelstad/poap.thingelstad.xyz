@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { day, number, writingItems, writingKind, years } from '../../lib/data';
+import { essays } from '../../lib/content';
+const { Content: Essays } = essays;
+---
+
+<Layout
+  title="Writing — Proof of a Person"
+  description={`Jamie Thingelstad on POAP: ${writingItems.length} posts and Weekly Thing issues, 2021 to 2026.`}
+>
+  <section class="text-page">
+    <h1>Writing</h1>
+    <p class="dek">
+      Jamie wrote about POAP from the first drops in 2021 to the Airport Rally
+      in 2026: {number(writingItems.length)} posts and Weekly Thing issues. The
+      five that matter most come first. Jamie also kept a list of what to ask
+      POAP for, and what came of it:{' '}
+      <a href="/writing/advice/">What Jamie told POAP</a>.
+    </p>
+    <h2>Five pieces</h2>
+    <Essays />
+    {[...years].reverse().map((y) => {
+      const list = writingItems.filter((w) => w.date.startsWith(y)).reverse();
+      return (
+        list.length > 0 && (
+          <section id={`y${y}`}>
+            <h2>
+              {y} <small>{list.length}</small>
+            </h2>
+            <ul class="posts">
+              {list.map((w) => (
+                <li>
+                  <a href={w.url}>{w.title}</a>{' '}
+                  <small>
+                    {writingKind[w.kind]} · {day(w.date)}
+                  </small>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      );
+    })}
+  </section>
+</Layout>

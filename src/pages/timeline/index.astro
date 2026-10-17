@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { number, yearPath } from '../../lib/data';
+import { chapters } from '../../lib/content';
+import { yearData } from '../../lib/years';
+---
+
+<Layout
+  title="Timeline — Proof of a Person"
+  description="Jamie Thingelstad's POAP years, 2021 to 2026: what was collected, what was issued, and what was written, side by side."
+>
+  <section class="text-page">
+    <h1>Timeline</h1>
+    <p class="dek">
+      Each year is one stream with two sides. On the left, the tokens Jamie
+      collected from other people's drops, at the day they were minted. On the
+      right, the drops Jamie made, at the day of the event, with the span of
+      mints beneath. Down the middle, what Jamie wrote while it happened, and
+      what POAP the company did, in black.
+    </p>
+  </section>
+  <ol class="chapters">
+    {yearData.map((y) => {
+      const chapter = chapters[y.year]!.frontmatter;
+      return (
+        <li>
+          <a href={yearPath(y.year)}>
+            <span class="year">{y.year}</span>
+            <b>{chapter.title}</b>
+            <small>
+              {number(y.left.length)} collected · {number(y.right.length)}{' '}
+              issued · {number(y.mints)} mints by {number(y.minters)} people ·{' '}
+              {number(y.writing)} posts
+            </small>
+            <q>{chapter.quote}</q>
+          </a>
+        </li>
+      );
+    })}
+  </ol>
+</Layout>

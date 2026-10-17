@@ -1,0 +1,30 @@
+---
+// One item in the timeline's middle column: Jamie's writing, a note, or one
+// of POAP's own milestones (in black).
+import { day, writingKind } from '../lib/data';
+import type { SpineItem } from '../lib/years';
+interface Props {
+  item: SpineItem;
+}
+const { item } = Astro.props;
+---
+
+{item.kind === 'world' ? (
+  <div class="spine world">
+    <i>POAP</i>
+    <b>{item.title}</b>
+    <span>{day(item.date)}</span>
+  </div>
+) : item.kind === 'note' ? (
+  <div class="spine note">
+    <i>Note</i>
+    <a href={item.url}>{item.title}</a>
+    <span>{day(item.date)}</span>
+  </div>
+) : (
+  <div class:list={['spine', item.item.kind]}>
+    <i>{writingKind[item.item.kind]}</i>
+    <a href={item.item.url}>{item.item.title}</a>
+    <span>{day(item.date)}</span>
+  </div>
+)}

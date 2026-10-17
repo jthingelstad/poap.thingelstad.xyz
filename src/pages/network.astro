@@ -1,0 +1,348 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  dropById,
+  drops,
+  layout,
+  mints,
+  number,
+  people,
+  personPath,
+  series,
+  seriesBySlug,
+  seriesPath,
+} from '../lib/data';
+
+// Drops and people, one edge per mint, laid out once by the archive export
+// (scripts/export_site_data.py) so the page is a picture before it is an app.
+const size = layout.size;
+const at = (p: [number, number]) => p.map((v) => v.toFixed(1)).join(' ');
+const radius = (n: number) => 3 + Math.sqrt(n) * 1.6;
+const personRadius = (total: number) => 1.2 + Math.log10(total + 1) * 1.1;
+const personIndex = new Map(people.map((p, i) => [p.address, i]));
+const collectors = new Map<number, number[]>();
+for (const m of mints) {
+  if (!collectors.has(m.drop)) collectors.set(m.drop, []);
+  collectors.get(m.drop)!.push(personIndex.get(m.person)!);
+}
+const edges = drops.map((d) => {
+  const from = at(layout.drops[d.id]!);
+  return {
+    drop: d,
+    path: (collectors.get(d.id) || [])
+      .map((i) => `M${from}L${at(layout.people[people[i]!.address]!)}`)
+      .join(''),
+  };
+});
+const labelled = new Set(
+  [...drops]
+    .sort((a, b) => b.mints - a.mints)
+    .slice(0, 12)
+    .map((d) => d.id),
+);
+const graph = {
+  drops: Object.fromEntries(
+    drops.map((d) => [
+      d.id,
+      { name: d.name, people: collectors.get(d.id) || [], mints: d.mints },
+    ]),
+  ),
+  people: people.map((p) => ({
+    label: p.label,
+    address: p.address,
+    drops: p.drops.map((d) => d.id),
+  })),
+};
+
+// The stories under the picture.
+const short: Record<string, string> = {
+  '612': '612',
+  birthday: 'Birthdays',
+  weekly: 'Weekly',
+  family: 'Family',
+  sps: 'SPS',
+  minnebar: 'Minnebar',
+  t4g: 'T4G',
+  met: 'Met',
+  community: 'Community',
+};
+const onramp = people.filter((p) => p.total === 1).length;
+const tiers = [
+  ['one drop', (n: number) => n === 1],
+  ['two to four', (n: number) => n >= 2 && n <= 4],
+  ['five to nine', (n: number) => n >= 5 && n <= 9],
+  ['ten or more', (n: number) => n >= 10],
+] as const;
+const tierCounts = tiers.map(
+  ([label, test]) =>
+    [label, people.filter((p) => test(p.drops.length)).length] as const,
+);
+const regulars = people
+  .filter((p) => p.drops.length >= 10)
+  .sort((a, b) => b.drops.length - a.drops.length);
+const seriesCount = (p: (typeof people)[number], slug: string) =>
+  p.drops.filter((d) => dropById.get(d.id)?.series === slug).length;
+const birthdayCounts = [5, 4, 3, 2, 1].map(
+  (n) => [n, people.filter((p) => p.birthdays === n)] as const,
+);
+const finishers = people.filter((p) => p.finished_612).length;
+---
+
+<Layout
+  title="Network — Proof of a Person"
+  description={`The ${people.length} people who hold one of Jamie Thingelstad's POAP drops, and the drops they share.`}
+>
+  <section class="text-page">
+    <h1>Network</h1>
+    <p class="dek">
+      {number(drops.length)} drops and the {number(people.length)} people who
+      collected them, one line per mint. Drops are colored by series and sized
+      by mints; people are gray dots sized by how many POAPs they hold in all.
+      Choose a drop to see its collectors, or a person to see their drops.
+    </p>
+  </section>
+  <div class="network">
+    <svg
+      viewBox={`0 0 ${size} ${size}`}
+      role="img"
+      aria-label={`Network of ${drops.length} drops and ${people.length} collectors`}
+      data-network
+    >
+      <g class="edges">
+        {edges.map(({ drop, path }) => (
+          <path
+            d={path}
+            data-drop={drop.id}
+            stroke={seriesBySlug.get(drop.series)?.color}
+          />
+        ))}
+      </g>
+      <g class="people">
+        {people.map((p, i) => {
+          const [x, y] = layout.people[p.address]!;
+          return (
+            <circle
+              cx={x.toFixed(1)}
+              cy={y.toFixed(1)}
+              r={personRadius(p.total ?? 1).toFixed(1)}
+              data-person={i}
+            >
+              <title>{p.label}</title>
+            </circle>
+          );
+        })}
+      </g>
+      <g class="drops">
+        {drops.map((d) => {
+          const [x, y] = layout.drops[d.id]!;
+          return (
+            <circle
+              id={`drop-${d.id}`}
+              cx={x.toFixed(1)}
+              cy={y.toFixed(1)}
+              r={radius(d.mints).toFixed(1)}
+              fill={seriesBySlug.get(d.series)?.color}
+              data-drop={d.id}
+              tabindex="0"
+            >
+              <title>{d.name}</title>
+            </circle>
+          );
+        })}
+      </g>
+      <g class="labels" aria-hidden="true">
+        {drops
+          .filter((d) => labelled.has(d.id))
+          .map((d) => {
+            const [x, y] = layout.drops[d.id]!;
+            return (
+              <text x={x + radius(d.mints) + 3} y={y + 4}>
+                {d.name.replace(/ — 612 POAP Challenge$/, '')}
+              </text>
+            );
+          })}
+      </g>
+    </svg>
+    <aside class="network-panel" data-panel aria-live="polite">
+      <p class="note">Nothing chosen.</p>
+    </aside>
+  </div>
+  <ul class="series-legend">
+    {series.map((s) => (
+      <li style={`--series: ${s.color}`}>
+        <a href={seriesPath(s.slug)}>{s.label}</a>
+      </li>
+    ))}
+  </ul>
+
+  <section class="text-page">
+    <h2>The on-ramp</h2>
+    <p>
+      For <b>{number(onramp)}</b> of the {number(people.length)} people, a drop
+      of Jamie's is the only POAP they ever collected.
+    </p>
+    <div class="bar" role="img" aria-label={`${onramp} of ${people.length}`}>
+      <span
+        style={`width: ${((onramp / people.length) * 100).toFixed(1)}%`}
+      ></span>
+    </div>
+    <table>
+      <tbody>
+        {tierCounts.map(([label, n]) => (
+          <tr>
+            <td>Collected {label} of Jamie's drops</td>
+            <td>{number(n)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>The regulars</h2>
+    <p>
+      The {regulars.length} people with ten or more of Jamie's drops, by series.
+    </p>
+  </section>
+  <div class="table-wrap">
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th>Person</th>
+          {series.map((s) => (
+            <th style={`--series: ${s.color}`} title={s.label}>
+              {short[s.slug] || s.label}
+            </th>
+          ))}
+          <th>All</th>
+        </tr>
+      </thead>
+      <tbody>
+        {regulars.map((p) => (
+          <tr>
+            <td>
+              <a href={personPath(p.address)}>{p.label}</a>
+            </td>
+            {series.map((s) => {
+              const n = seriesCount(p, s.slug);
+              return <td class={n ? '' : 'zero'}>{n || '·'}</td>;
+            })}
+            <td>
+              <b>{p.drops.length}</b>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <section class="text-page">
+    <h2>The birthdays</h2>
+    <p>
+      Five birthday drops, 2022 to 2026. How many of them each person collected:
+    </p>
+    <table>
+      <tbody>
+        {birthdayCounts.map(([n, list]) => (
+          <tr>
+            <td>{n} of 5</td>
+            <td>
+              {list.length}
+              {n >= 4 && (
+                <>
+                  {': '}
+                  {list.map((p, i) => (
+                    <>
+                      {i > 0 && ', '}
+                      <a href={personPath(p.address)}>{p.label}</a>
+                    </>
+                  ))}
+                </>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>The 612 finishers</h2>
+    <p>
+      {finishers} people collected every location of the{' '}
+      <a href={seriesPath('612')}>612 POAP Challenge</a>.
+    </p>
+  </section>
+
+  <script
+    type="application/json"
+    id="graph-data"
+    set:html={JSON.stringify(graph)}
+  />
+  <script>
+    const data = JSON.parse(
+      document.getElementById('graph-data')!.textContent!,
+    );
+    const svg = document.querySelector<SVGSVGElement>('[data-network]')!;
+    const panel = document.querySelector<HTMLElement>('[data-panel]')!;
+    const all = (selector: string) =>
+      svg.querySelectorAll<SVGElement>(selector);
+    const text = (tag: string, value: string, href?: string) => {
+      const element = document.createElement(href ? 'a' : tag);
+      element.textContent = value;
+      if (href) (element as HTMLAnchorElement).href = href;
+      return element;
+    };
+    function clear() {
+      svg.classList.remove('focus');
+      all('.on').forEach((e) => e.classList.remove('on'));
+    }
+    function chooseDrop(id: string) {
+      const drop = data.drops[id];
+      if (!drop) return;
+      clear();
+      svg.classList.add('focus');
+      all(`[data-drop="${id}"]`).forEach((e) => e.classList.add('on'));
+      for (const i of drop.people) {
+        svg.querySelector(`[data-person="${i}"]`)?.classList.add('on');
+        for (const other of data.people[i].drops)
+          svg
+            .querySelector(`circle[data-drop="${other}"]`)
+            ?.classList.add('on');
+      }
+      panel.replaceChildren(
+        text('p', drop.name, `/drops/${id}/`),
+        text(
+          'p',
+          `${drop.people.length} collectors, and the other drops they hold.`,
+        ),
+      );
+      history.replaceState(null, '', `#drop-${id}`);
+    }
+    function choosePerson(i: number) {
+      const person = data.people[i];
+      clear();
+      svg.classList.add('focus');
+      svg.querySelector(`[data-person="${i}"]`)?.classList.add('on');
+      for (const id of person.drops)
+        svg.querySelector(`circle[data-drop="${id}"]`)?.classList.add('on');
+      panel.replaceChildren(
+        text('p', person.label, `/people/${person.address}/`),
+        text('p', `${person.drops.length} of Jamie's drops.`),
+      );
+    }
+    svg.addEventListener('click', (event) => {
+      const target = event.target as SVGElement;
+      if (target.dataset.drop && target.tagName === 'circle')
+        chooseDrop(target.dataset.drop);
+      else if (target.dataset.person)
+        choosePerson(Number(target.dataset.person));
+      else clear();
+    });
+    svg.addEventListener('keydown', (event) => {
+      const target = event.target as SVGElement;
+      if ((event.key === 'Enter' || event.key === ' ') && target.dataset.drop) {
+        event.preventDefault();
+        chooseDrop(target.dataset.drop);
+      }
+    });
+    const hash = location.hash.match(/^#drop-(\d+)$/);
+    if (hash) chooseDrop(hash[1]!);
+  </script>
+</Layout>

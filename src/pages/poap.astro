@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { poapPage } from '../lib/content';
+const { Content, frontmatter } = poapPage!;
+---
+
+<Layout
+  title={`${frontmatter.title} — Proof of a Person`}
+  description={frontmatter.description}
+>
+  <article class="text-page wide">
+    <h1>{frontmatter.title}</h1>
+    <Content />
+  </article>
+</Layout>

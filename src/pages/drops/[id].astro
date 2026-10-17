@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Art from '../../components/Art.astro';
+import Kudos from '../../components/Kudos.astro';
+import MintCurve from '../../components/MintCurve.astro';
+import {
+  type Drop,
+  day,
+  drops,
+  labelOf,
+  mintsByDrop,
+  number,
+  personPath,
+  place,
+  plural,
+  seriesBySlug,
+  seriesPath,
+  tokenPath,
+  year,
+  yearPath,
+} from '../../lib/data';
+import { rasterUrl } from '../../lib/media';
+
+export function getStaticPaths() {
+  return drops.map((drop) => ({
+    params: { id: String(drop.id) },
+    props: { drop },
+  }));
+}
+interface Props {
+  drop: Drop;
+}
+const { drop } = Astro.props;
+const series = seriesBySlug.get(drop.series);
+const mints = mintsByDrop.get(drop.id) || [];
+const where = place(drop);
+const dates =
+  drop.end && drop.end !== drop.date
+    ? `${drop.date} to ${drop.end}`
+    : drop.date;
+const timeline = `${yearPath(year(drop.date))}#drop-${drop.id}`;
+---
+
+<Layout
+  title={`${drop.name} — Proof of a Person`}
+  description={`A POAP drop Jamie Thingelstad made: ${drop.name}, ${drop.date}. ${plural(drop.mints, 'token')} minted by ${plural(drop.collectors, 'person', 'people')}.`}
+  image={rasterUrl(drop.id, 640)}
+>
+  <article class="item">
+    <div class="item-art">
+      <Art drop={drop} large />
+    </div>
+    <div class="item-text">
+      <p class="kicker">
+        Issued by Jamie
+        {series && (
+          <>
+            {' · '}
+            <a href={seriesPath(series.slug)}>{series.label}</a>
+          </>
+        )}
+      </p>
+      <h1>{drop.name}</h1>
+      <p class="facts">
+        {dates}
+        {where && ` · ${where}`}
+        {drop.private && ' · unlisted'}
+      </p>
+      <div class="totals small">
+        <div>
+          <b>{number(drop.mints)}</b>minted
+        </div>
+        <div>
+          <b>{number(drop.collectors)}</b>collectors
+        </div>
+        {drop.reserved > 0 && (
+          <div>
+            <b>{number(drop.reserved)}</b>reserved, never minted
+          </div>
+        )}
+      </div>
+      {drop.description && <p class="description">{drop.description}</p>}
+      <ul class="links">
+        {drop.own_token ? (
+          <li>
+            <a href={tokenPath(drop.own_token)}>Jamie's own token</a>
+          </li>
+        ) : (
+          <li>Jamie never minted this one.</li>
+        )}
+        <li>
+          <a href={timeline}>On the {year(drop.date)} timeline</a>
+        </li>
+        <li>
+          <a href={`/network/#drop-${drop.id}`}>In the network</a>
+        </li>
+        {drop.url && (
+          <li>
+            <a href={drop.url}>The drop's own link</a>
+          </li>
+        )}
+      </ul>
+      <div class="kudos-row">
+        <Kudos path={`/drops/${drop.id}/`} title={drop.name} />
+        <span>Kudos</span>
+      </div>
+    </div>
+  </article>
+
+  {drop.posts.length > 0 && (
+    <section>
+      <h2>Jamie's posts</h2>
+      <ul class="posts">
+        {drop.posts.map((post) => (
+          <li>
+            <a href={post.url}>{post.title}</a> <small>{post.date}</small>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {mints.length > 0 && (
+    <section>
+      <h2>Mints</h2>
+      <MintCurve date={drop.date} mints={mints} />
+      <p class="span">
+        First mint {day(drop.first_mint)}, last {day(drop.last_mint)}.
+      </p>
+    </section>
+  )}
+
+  {mints.length > 0 && (
+    <section>
+      <h2>{plural(mints.length, 'collector')}</h2>
+      <p class="note">In the order they minted. Named as POAP showed them.</p>
+      <ol class="people-list">
+        {mints.map((m) => (
+          <li>
+            <a href={personPath(m.person)}>{labelOf(m.person)}</a>{' '}
+            <small>{day(m.minted)}</small>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+</Layout>

@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Tile from '../components/Tile.astro';
+import {
+  day,
+  number,
+  tokenPath,
+  tokens,
+  tokensByDate,
+  tokensFromOthers,
+  years,
+} from '../lib/data';
+
+const first = tokensByDate[0]!;
+const last = tokensByDate[tokensByDate.length - 1]!;
+const two100 = tokensByDate[199];
+
+// Places, as the drops gave them. A few spellings of Minneapolis are one place.
+const placeOf = (t: (typeof tokens)[number]) => {
+  if (t.drop.virtual) return 'Virtual';
+  const city = t.drop.city || '';
+  if (/^Minneapoli/.test(city)) return 'Minneapolis';
+  return city.replace(/,.*$/, '') || 'No place given';
+};
+const places = new Map<string, number>();
+for (const t of tokensFromOthers)
+  places.set(placeOf(t), (places.get(placeOf(t)) || 0) + 1);
+const topPlaces = [...places.entries()]
+  .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+  .slice(0, 16);
+
+const bySupply = tokensFromOthers
+  .filter((t) => t.drop.supply > 0)
+  .sort((a, b) => a.drop.supply - b.drop.supply);
+const rarest = bySupply.slice(0, 10);
+const commonest = bySupply.slice(-5).reverse();
+
+const tally = (key: (t: (typeof tokens)[number]) => string) => {
+  const counts = new Map<string, number>();
+  for (const t of tokens) counts.set(key(t), (counts.get(key(t)) || 0) + 1);
+  return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+};
+const chainName: Record<string, string> = {
+  xdai: 'Gnosis',
+  mainnet: 'Ethereum mainnet',
+  'apechain-mainnet': 'ApeChain',
+};
+const wallets = tally((t) => t.wallet);
+const chains = tally((t) => chainName[t.chain] || t.chain);
+---
+
+<Layout
+  title="Collected — Proof of a Person"
+  description={`The ${tokens.length} POAPs Jamie Thingelstad collected, 2021 to 2026.`}
+>
+  <section class="text-page">
+    <h1>Collected</h1>
+    <p class="dek">
+      {number(tokens.length)} tokens, {number(tokensFromOthers.length)} of them
+      from other people's drops and the rest from Jamie's own. The first was the
+      <a href={tokenPath(first.id)}>{first.drop.name}</a> on {day(first.minted)}
+      .
+      {two100 && (
+        <>
+          The 200th was <a href={tokenPath(two100.id)}>{two100.drop.name}</a> on{' '}
+          {day(two100.minted)}.
+        </>
+      )}
+      The last was <a href={tokenPath(last.id)}>{last.drop.name}</a> on{' '}
+      {day(last.minted)}.
+    </p>
+  </section>
+
+  <nav class="years" aria-label="Years">
+    {years.map((y) => (
+      <a href={`#y${y}`}>{y}</a>
+    ))}
+  </nav>
+  {years.map((y) => {
+    const list = tokensByDate.filter((t) => t.minted.startsWith(y));
+    return (
+      <section id={`y${y}`}>
+        <h2>
+          {y} <small>{number(list.length)} tokens</small>
+        </h2>
+        <div class="tiles">
+          {list.map((t) => (
+            <Tile
+              href={tokenPath(t.id)}
+              drop={t.drop}
+              caption={`${day(t.minted)}${t.own_drop ? ' · Jamie’s drop' : ''}`}
+            />
+          ))}
+        </div>
+      </section>
+    );
+  })}
+
+  <div class="text-page">
+    <h2>Places</h2>
+    <p class="note">Tokens from other people's drops, by the drop's city.</p>
+    <table>
+      <tbody>
+        {topPlaces.map(([name, n]) => (
+          <tr>
+            <td>{name}</td>
+            <td>{n}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>Rarity</h2>
+    <p class="note">
+      How many tokens each drop had in all, from the final snapshot. The rarest:
+    </p>
+    <table>
+      <tbody>
+        {rarest.map((t) => (
+          <tr>
+            <td>
+              <a href={tokenPath(t.id)}>{t.drop.name}</a>
+            </td>
+            <td>one of {number(t.drop.supply)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="note">And the most common:</p>
+    <table>
+      <tbody>
+        {commonest.map((t) => (
+          <tr>
+            <td>
+              <a href={tokenPath(t.id)}>{t.drop.name}</a>
+            </td>
+            <td>one of {number(t.drop.supply)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <h2>Wallets and chains</h2>
+    <table>
+      <tbody>
+        {wallets.map(([name, n]) => (
+          <tr>
+            <td>{name}</td>
+            <td>{n}</td>
+          </tr>
+        ))}
+        {chains.map(([name, n]) => (
+          <tr>
+            <td>on {name}</td>
+            <td>{n}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Layout>

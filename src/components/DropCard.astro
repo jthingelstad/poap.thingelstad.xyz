@@ -1,0 +1,44 @@
+---
+// A drop Jamie made, as a timeline card: the right side.
+import Art from './Art.astro';
+import Kudos from './Kudos.astro';
+import { type Drop, day, dropPath, number, place } from '../lib/data';
+interface Props {
+  drop: Drop;
+}
+const { drop } = Astro.props;
+const span =
+  drop.first_mint &&
+  (day(drop.first_mint) === day(drop.last_mint)
+    ? `minted ${day(drop.first_mint)}`
+    : `minted ${day(drop.first_mint)} to ${day(drop.last_mint)}`);
+const description = (drop.description || '').trim();
+const short =
+  description.length > 200
+    ? `${description.slice(0, 200).replace(/\s+\S*$/, '')} …`
+    : description;
+const meta = [
+  place(drop),
+  `${number(drop.mints)} minted by ${number(drop.collectors)}`,
+  span,
+].filter(Boolean);
+---
+
+<article class="card issued" id={`drop-${drop.id}`}>
+  <Art drop={drop} />
+  <div>
+    <a class="name" href={dropPath(drop.id)}>
+      {drop.name}
+    </a>
+    <span>
+      {drop.date} · {meta.join(' · ')}
+      {drop.posts.slice(0, 2).map((post) => (
+        <a class="post" href={post.url}>
+          post
+        </a>
+      ))}
+    </span>
+    {short && <p>{short}</p>}
+  </div>
+  <Kudos path={dropPath(drop.id)} title={drop.name} compact />
+</article>

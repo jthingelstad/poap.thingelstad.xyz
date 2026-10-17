@@ -1,0 +1,108 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Art from '../../components/Art.astro';
+import {
+  type Token,
+  day,
+  dropPath,
+  number,
+  place,
+  tokens,
+  year,
+  yearPath,
+} from '../../lib/data';
+import { rasterUrl } from '../../lib/media';
+
+export function getStaticPaths() {
+  return tokens.map((token) => ({
+    params: { id: String(token.id) },
+    props: { token },
+  }));
+}
+interface Props {
+  token: Token;
+}
+const { token } = Astro.props;
+const drop = token.drop;
+const where = place(drop);
+const chain: Record<string, string> = {
+  xdai: 'Gnosis',
+  mainnet: 'Ethereum mainnet',
+  'apechain-mainnet': 'ApeChain',
+};
+const timeline = token.own_drop
+  ? `${yearPath(year(drop.date))}#drop-${drop.id}`
+  : `${yearPath(year(token.minted))}#token-${token.id}`;
+---
+
+<Layout
+  title={`${drop.name} — Proof of a Person`}
+  description={`A POAP Jamie Thingelstad collected: ${drop.name}, minted ${day(token.minted)}.`}
+  image={rasterUrl(drop.id, 640)}
+>
+  <article class="item">
+    <div class="item-art">
+      <Art drop={drop} large />
+    </div>
+    <div class="item-text">
+      <p class="kicker">
+        {token.own_drop
+          ? 'Collected from Jamie’s own drop'
+          : 'Collected by Jamie'}
+      </p>
+      <h1>{drop.name}</h1>
+      <p class="facts">
+        Event {drop.date}
+        {where && ` · ${where}`}
+      </p>
+      <div class="totals small">
+        <div>
+          <b>{day(token.minted)}</b>minted
+        </div>
+        {drop.supply > 0 && (
+          <div>
+            <b>one of {number(drop.supply)}</b>tokens of this drop
+          </div>
+        )}
+        <div>
+          <b>#{token.id}</b>token
+        </div>
+      </div>
+      {token.commentary && (
+        <blockquote class="commentary">
+          {token.commentary}
+          {token.post && (
+            <cite>
+              <a href={token.post.url}>Jamie's post, {token.post.date}</a>
+            </cite>
+          )}
+        </blockquote>
+      )}
+      {drop.description && <p class="description">{drop.description}</p>}
+      <ul class="links">
+        {token.own_drop && (
+          <li>
+            <a href={dropPath(drop.id)}>The drop Jamie made</a>
+          </li>
+        )}
+        {token.post && !token.commentary && (
+          <li>
+            <a href={token.post.url}>Jamie's post</a>{' '}
+            <small>{token.post.date}</small>
+          </li>
+        )}
+        <li>
+          <a href={timeline}>On the timeline</a>
+        </li>
+        {drop.url && (
+          <li>
+            <a href={drop.url}>The drop's own link</a>
+          </li>
+        )}
+      </ul>
+      <p class="note">
+        Held at {token.wallet} on {chain[token.chain] || token.chain}.
+      </p>
+    </div>
+  </article>
+</Layout>

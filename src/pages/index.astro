@@ -1,10 +1,55 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { counts, drops, people, tokens } from '../lib/data';
-const fromOthers = tokens.filter((t) => !t.own_drop).length;
-const first = tokens[0];
-const last = tokens[tokens.length - 1];
-const years = [...new Set(drops.map((d) => d.date.slice(0, 4)))].sort();
+import {
+  counts,
+  day,
+  drops,
+  mints,
+  number,
+  people,
+  tokens,
+  tokensByDate,
+  tokensFromOthers,
+  yearPath,
+} from '../lib/data';
+import { chapters, essays } from '../lib/content';
+import { yearData } from '../lib/years';
+const { Content: Essays } = essays;
+const first = tokensByDate[0];
+const last = tokensByDate[tokensByDate.length - 1];
+const reserved = drops.reduce((sum, d) => sum + d.reserved, 0);
+const sections = [
+  [
+    '/timeline/',
+    'Timeline',
+    'Every year as two sides and a spine: what Jamie collected, what Jamie made, and what was written while it happened.',
+  ],
+  [
+    '/collected/',
+    'Collected',
+    `${number(tokens.length)} tokens, from the ENS 4th Anniversary vote to the last airport.`,
+  ],
+  [
+    '/issued/',
+    'Issued',
+    `${number(drops.length)} drops in nine series, and the ${number(mints.length)} tokens other people minted from them.`,
+  ],
+  [
+    '/network/',
+    'Network',
+    `The ${number(people.length)} people who hold one of Jamie's drops, and the drops they share.`,
+  ],
+  [
+    '/writing/',
+    'Writing',
+    'Every post and Weekly Thing issue about POAP, and the advice Jamie gave the company.',
+  ],
+  [
+    '/poap/',
+    'POAP',
+    'The company, from ETHDenver 2019 to the wind-down in 2026.',
+  ],
+];
 ---
 
 <Layout>
@@ -12,41 +57,69 @@ const years = [...new Set(drops.map((d) => d.date.slice(0, 4)))].sort();
     <p class="mark">POAP</p>
     <h1>Proof of a Person</h1>
     <p class="sub">
-      Jamie Thingelstad's POAP time capsule, 2021 to 2026. Proof of Attendance
-      Protocol wound down in 2026. What stays is the record: what one person
-      collected from the world, what he made for other people, and the people
-      who have proof of him.
+      Jamie Thingelstad's POAP time capsule, 2021 to 2026. The Proof of
+      Attendance Protocol wound down in 2026. What stays is the record: what one
+      person collected from the world, what Jamie made for other people, and the
+      people who have proof of Jamie.
     </p>
   </section>
   <div class="totals">
     <div>
-      <b>{counts.tokens}</b>tokens collected
+      <b>{number(tokens.length)}</b>tokens collected
     </div>
     <div>
-      <b>{fromOthers}</b>from other people's drops
+      <b>{number(tokensFromOthers.length)}</b>from other people's drops
     </div>
     <div>
-      <b>{counts.drops}</b>drops issued
+      <b>{number(counts.drops)}</b>drops issued
     </div>
     <div>
-      <b>{counts.mints.toLocaleString('en-US')}</b>tokens minted from them
+      <b>{number(mints.length)}</b>tokens minted from them
     </div>
     <div>
-      <b>{people.length}</b>people who collected one
+      <b>{number(people.length)}</b>people who collected one
+    </div>
+    <div>
+      <b>{number(reserved)}</b>invitations never minted
     </div>
   </div>
+  <p class="dek">
+    The first token was the ENS 4th Anniversary vote on {day(first.minted)}. The
+    last was "{last.drop.name}" on {day(last.minted)}.
+  </p>
+
+  <h2 class="section-title">Six chapters</h2>
+  <ol class="chapters">
+    {yearData.map((y) => {
+      const chapter = chapters[y.year]?.frontmatter;
+      return (
+        <li>
+          <a href={yearPath(y.year)}>
+            <span class="year">{y.year}</span>
+            <b>{chapter?.title}</b>
+            <small>
+              {number(y.left.length)} collected · {number(y.right.length)}{' '}
+              issued · {number(y.mints)} mints by others
+            </small>
+            {chapter && <q>{chapter.quote}</q>}
+          </a>
+        </li>
+      );
+    })}
+  </ol>
+
+  <h2 class="section-title">The capsule</h2>
+  <ul class="sections">
+    {sections.map(([href, label, text]) => (
+      <li>
+        <a href={href}>{label}</a>
+        <span>{text}</span>
+      </li>
+    ))}
+  </ul>
+
   <section class="text-page">
-    <p class="dek">
-      The first token was the ENS 4th Anniversary vote on{' '}
-      {first.minted.slice(0, 10)}. The last was "{last.drop.name}" on{' '}
-      {last.minted.slice(0, 10)}. Between them, drops in {years.length} years,
-      from {years[0]} to {years[years.length - 1]}.
-    </p>
-    <p class="dek">
-      The site is being built in the open. The timeline, the network, the drops
-      and the people arrive page by page; the data behind them is complete and
-      lives in{' '}
-      <a href="https://github.com/jthingelstad/poap-archive">poap-archive</a>.
-    </p>
+    <h2>Five pieces of Jamie's writing</h2>
+    <Essays />
   </section>
 </Layout>

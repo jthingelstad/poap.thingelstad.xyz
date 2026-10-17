@@ -11,7 +11,25 @@ import assert from 'node:assert/strict';
 const base = process.env.SITE_TEST_URL || 'http://127.0.0.1:4321';
 const output = '/tmp/poap-site-qa';
 await fs.mkdir(output, { recursive: true });
-const routes = ['/', '/about/'];
+const routes = [
+  '/',
+  '/about/',
+  '/timeline/',
+  '/timeline/2023/',
+  '/timeline/2025/',
+  '/drops/117328/',
+  '/drops/4547/',
+  '/tokens/324580/',
+  '/people/0x6493db62998997134e0451cacd32360858f9a3d6/',
+  '/series/612/',
+  '/series/birthday/',
+  '/network/',
+  '/collected/',
+  '/issued/',
+  '/writing/',
+  '/writing/advice/',
+  '/poap/',
+];
 const browser = await chromium.launch({
   headless: true,
   executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || undefined,

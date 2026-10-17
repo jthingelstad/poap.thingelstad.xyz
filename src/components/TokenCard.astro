@@ -1,0 +1,32 @@
+---
+// A token Jamie collected from someone else's drop: the left side.
+import Art from './Art.astro';
+import { type Token, day, number, place, tokenPath } from '../lib/data';
+interface Props {
+  token: Token;
+}
+const { token } = Astro.props;
+const meta = [
+  place(token.drop),
+  token.drop.supply ? `one of ${number(token.drop.supply)}` : '',
+].filter(Boolean);
+---
+
+<article class="card collected" id={`token-${token.id}`}>
+  <Art drop={token.drop} />
+  <div>
+    <a class="name" href={tokenPath(token.id)}>
+      {token.drop.name}
+    </a>
+    <span>
+      {day(token.minted)}
+      {meta.length > 0 && ` · ${meta.join(' · ')}`}
+      {token.post && (
+        <a class="post" href={token.post.url}>
+          post
+        </a>
+      )}
+    </span>
+    {token.commentary && <p>{token.commentary}</p>}
+  </div>
+</article>

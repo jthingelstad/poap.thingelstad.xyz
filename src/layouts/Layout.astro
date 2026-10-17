@@ -8,10 +8,21 @@ interface Props {
 const SITE_NAME = 'Proof of a Person';
 const {
   title = SITE_NAME,
-  description = "POAP: Proof of a Person. Jamie Thingelstad's POAP time capsule, 2021 to 2026: what he collected, what he issued, and the people who collected it.",
+  description = "POAP: Proof of a Person. Jamie Thingelstad's POAP time capsule, 2021 to 2026: what Jamie collected, what Jamie issued, and the people who collected it.",
   image,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const sections = [
+  ['/timeline/', 'Timeline'],
+  ['/collected/', 'Collected'],
+  ['/issued/', 'Issued'],
+  ['/network/', 'Network'],
+  ['/writing/', 'Writing'],
+  ['/poap/', 'POAP'],
+  ['/about/', 'About'],
+];
+const current = (href: string) =>
+  Astro.url.pathname.startsWith(href) ? 'page' : undefined;
 const analytics =
   import.meta.env.PROD && import.meta.env.PUBLIC_TINYLYTICS_ENABLED === 'true';
 ---
@@ -65,7 +76,11 @@ const analytics =
         <span class="expansion">Proof of a Person</span>
       </a>
       <nav aria-label="Main navigation">
-        <a href="/about/">About</a>
+        {sections.map(([href, label]) => (
+          <a href={href} aria-current={current(href)}>
+            {label}
+          </a>
+        ))}
         <button
           class="theme-toggle"
           data-theme-toggle

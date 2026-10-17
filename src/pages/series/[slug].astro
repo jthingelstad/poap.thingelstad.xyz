@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Tile from '../../components/Tile.astro';
+import {
+  type Series,
+  day,
+  dropPath,
+  dropsOfSeries,
+  labelOf,
+  mintsByDrop,
+  number,
+  people,
+  personPath,
+  plural,
+  series,
+} from '../../lib/data';
+import { seriesText } from '../../lib/content';
+
+export function getStaticPaths() {
+  return series.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+interface Props {
+  s: Series;
+}
+const { s } = Astro.props;
+const text = seriesText[s.slug];
+const Content = text?.Content;
+const list = dropsOfSeries(s.slug);
+const mints = list.flatMap((d) => mintsByDrop.get(d.id) || []);
+const counts = new Map<string, number>();
+for (const m of mints) counts.set(m.person, (counts.get(m.person) || 0) + 1);
+// The people who came back most often in this series.
+const regulars = [...counts.entries()]
+  .filter(([, n]) => n > 1)
+  .sort((a, b) => b[1] - a[1] || labelOf(a[0]).localeCompare(labelOf(b[0])))
+  .slice(0, 24);
+const finishers =
+  s.slug === '612'
+    ? people
+        .filter((p) => p.finished_612)
+        .sort((a, b) => (a.finished_612! < b.finished_612! ? -1 : 1))
+    : [];
+---
+
+<Layout
+  title={`${s.label} — Proof of a Person`}
+  description={`${s.label}: ${plural(list.length, 'POAP drop')} Jamie Thingelstad made, ${number(mints.length)} tokens minted.`}
+>
+  <section class="text-page">
+    <p class="kicker">
+      <a href="/issued/">Issued</a> · series
+    </p>
+    <h1 style={`--series: ${s.color}`} class="series-title">
+      {s.label}
+    </h1>
+    {Content && <Content />}
+    <div class="totals small">
+      <div>
+        <b>{number(list.length)}</b>drops
+      </div>
+      <div>
+        <b>{number(mints.length)}</b>tokens minted
+      </div>
+      <div>
+        <b>{number(counts.size)}</b>collectors
+      </div>
+      <div>
+        <b>{list[0]?.date.slice(0, 4)}</b>first
+      </div>
+      <div>
+        <b>{list[list.length - 1]?.date.slice(0, 4)}</b>last
+      </div>
+    </div>
+  </section>
+  {finishers.length > 0 && (
+    <section class="text-page">
+      <h2>The {finishers.length} who finished</h2>
+      <ol>
+        {finishers.map((p) => (
+          <li>
+            <a href={personPath(p.address)}>{p.label}</a>{' '}
+            <small>{day(p.finished_612)}</small>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )}
+  <h2>The drops</h2>
+  <div class="tiles">
+    {list.map((drop) => (
+      <Tile
+        href={dropPath(drop.id)}
+        drop={drop}
+        caption={`${drop.date} · ${number(drop.mints)} minted`}
+      />
+    ))}
+  </div>
+  {regulars.length > 0 && (
+    <section class="text-page">
+      <h2>Who came back</h2>
+      <p class="note">
+        Collectors with more than one drop in this series, by how many.
+      </p>
+      <ul class="people-list">
+        {regulars.map(([address, n]) => (
+          <li>
+            <a href={personPath(address)}>{labelOf(address)}</a>{' '}
+            <small>
+              {n} of {list.length}
+            </small>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Layout>

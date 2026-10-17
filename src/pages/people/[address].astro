@@ -1,0 +1,94 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Tile from '../../components/Tile.astro';
+import {
+  type Person,
+  day,
+  dropById,
+  dropPath,
+  externalUrlOf,
+  number,
+  people,
+  plural,
+  seriesBySlug,
+  seriesPath,
+} from '../../lib/data';
+
+export function getStaticPaths() {
+  return people.map((person) => ({
+    params: { address: person.address },
+    props: { person },
+  }));
+}
+interface Props {
+  person: Person;
+}
+const { person } = Astro.props;
+const held = person.drops
+  .map((d) => ({ drop: dropById.get(d.id)!, minted: d.minted }))
+  .sort((a, b) => (a.minted < b.minted ? -1 : 1));
+const bySeries = new Map<string, number>();
+for (const { drop } of held)
+  bySeries.set(drop.series, (bySeries.get(drop.series) || 0) + 1);
+const first = held[0];
+---
+
+<Layout
+  title={`${person.label} — Proof of a Person`}
+  description={`${person.label} holds ${plural(held.length, 'POAP')} from Jamie Thingelstad's drops.`}
+>
+  <section class="text-page person">
+    <p class="kicker">Collector</p>
+    <h1>{person.label}</h1>
+    <p class="facts">
+      <a href={externalUrlOf(person.address)}>
+        {person.ens ? `${person.ens} on ENS` : 'This address on Gnosisscan'}
+      </a>
+      <br />
+      <code>{person.address}</code>
+    </p>
+    <div class="totals small">
+      <div>
+        <b>{number(held.length)}</b>of Jamie's drops
+      </div>
+      {person.total != null && (
+        <div>
+          <b>{number(person.total)}</b>POAPs in all
+        </div>
+      )}
+      {person.birthdays > 0 && (
+        <div>
+          <b>{person.birthdays} of 5</b>birthdays
+        </div>
+      )}
+    </div>
+    <p>
+      {person.total === 1
+        ? `Jamie's drop is the only POAP ${person.label} ever collected.`
+        : `First collected one of Jamie's drops on ${day(first?.minted)}: ${first?.drop.name}.`}
+      {person.finished_612 &&
+        ` Finished the 612 POAP Challenge on ${day(person.finished_612)}.`}
+    </p>
+    {bySeries.size > 1 && (
+      <p class="series-counts">
+        {[...bySeries.entries()]
+          .sort((a, b) => b[1] - a[1])
+          .map(([slug, n]) => (
+            <a href={seriesPath(slug)}>
+              {seriesBySlug.get(slug)?.label} <b>{n}</b>
+            </a>
+          ))}
+      </p>
+    )}
+  </section>
+  <h2>Their path through Jamie's drops</h2>
+  <div class="tiles">
+    {held.map(({ drop, minted }) => (
+      <Tile
+        href={dropPath(drop.id)}
+        drop={drop}
+        caption={`minted ${day(minted)}`}
+      />
+    ))}
+  </div>
+</Layout>

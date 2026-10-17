@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { writing } from '../../lib/data';
+import { inline } from '../../lib/markdown';
+const rows = writing.advice;
+---
+
+<Layout
+  title="What Jamie told POAP — Proof of a Person"
+  description="Twenty-five things Jamie Thingelstad asked POAP to build, 2021 to 2025, and what shipped."
+>
+  <section class="text-page wide">
+    <h1>What Jamie told POAP</h1>
+    <p class="dek">
+      From 2021 to 2025 Jamie kept telling POAP what to build, in posts and in
+      the Weekly Thing. Here is each suggestion, in Jamie's words, beside what
+      came of it.
+    </p>
+    <div class="table-wrap">
+      <table class="advice">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Suggestion</th>
+            <th>Jamie's words</th>
+            <th>What happened</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr>
+              <td>{row.n}</td>
+              <td>
+                <b>{row.suggestion}</b>
+                <br />
+                <small set:html={inline(row.source)} />
+              </td>
+              <td>
+                <q>{row.words}</q>
+              </td>
+              <td set:html={inline(row.shipped)} />
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Layout>

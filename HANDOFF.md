@@ -149,8 +149,10 @@ capture.
   URL shows none.
 - Update the status lines in `README.md` here and in the archive's `README.md`.
 
-## What the cloud session keeps doing
+## The pages
 
-Everything else needs no AWS: the drop, token, people, series, timeline and network pages
-from the prototypes, the writing and advice pages, the POAP company page, and the content
-files. Those arrive on `main` through CI; once step 3 is done, each push deploys.
+Built locally on 2026-10-17 and deployed from `main`: home, timeline (index and one page
+per year), drops, tokens, people, series, network, collected, issued, writing, advice and
+the POAP company page. Prose is in `content/`. Still Jamie's: the chapter titles and
+quotes (drafts from the prototype) and the closing essay about the wind-down. The cloud
+session's clone predates the history scrub in poap-archive and must not push there.
