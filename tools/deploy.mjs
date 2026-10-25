@@ -89,6 +89,7 @@ if (media.length)
   throw new Error(`Media in the site build: ${media.slice(0, 5).join(', ')}`);
 let uploaded = 0,
   unchanged = 0;
+const replaced = [];
 async function upload(key) {
   const object = prepareObject(key, await fs.readFile(path.join('dist', key)));
   if (existing.has(key)) {
@@ -108,6 +109,7 @@ async function upload(key) {
   await s3.send(
     new PutObjectCommand({ Bucket: config.siteBucket, Key: key, ...object }),
   );
+  if (existing.has(key)) replaced.push(key);
   uploaded++;
 }
 // Complete assets and scripts before replacing pages. Retain old assets.
@@ -129,8 +131,8 @@ const mediaFolders = new Set(
   mediaPrefixes.map((prefix) => prefix.split('/')[0]),
 );
 const paths = [
-  ...new Set(
-    ordered
+  ...new Set([
+    ...ordered
       .filter((key) => !key.startsWith('_astro/'))
       .flatMap((key) => {
         const [folder] = key.split('/');
@@ -141,7 +143,13 @@ const paths = [
           ? [`/${key.slice(0, -'index.html'.length)}`, `/${key}`]
           : [`/${key}`];
       }),
-  ),
+    // Hashed bundles keep their bytes; one replaced in place had its headers
+    // change (as when objects stopped being stored gzip-encoded), so its
+    // cached copies go too.
+    ...replaced
+      .filter((key) => key.startsWith('_astro/'))
+      .map((key) => `/${key}`),
+  ]),
 ];
 const invalidation = await cdn.send(
   new CreateInvalidationCommand({

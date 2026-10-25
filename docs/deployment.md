@@ -55,7 +55,9 @@ local `media/` folder before that.
 and data validation; CodeQL; a credential-free build with link, metadata and published-media
 checks and Chromium checks at desktop and phone widths; then, on main, the deployment job
 uploads changed pages, invalidates page paths and compares delivered bytes with the build.
-Media is never uploaded by a deploy.
+Media is never uploaded by a deploy. Objects are stored uncompressed and the distribution
+compresses them (gzip or brotli) only for clients that send Accept-Encoding; a hashed
+bundle under `_astro/` replaced in place (a header change) is invalidated too.
 
 ## DNS
 

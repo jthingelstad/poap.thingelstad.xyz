@@ -1,5 +1,4 @@
 import { createHash } from 'node:crypto';
-import { gzipSync } from 'node:zlib';
 import path from 'node:path';
 export const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -37,15 +36,10 @@ function cacheControl(key, extension) {
     return 'public,max-age=0,s-maxage=60,must-revalidate';
   return 'public,max-age=3600';
 }
-const compressible = new Set([
-  '.html',
-  '.svg',
-  '.json',
-  '.css',
-  '.js',
-  '.txt',
-  '.xml',
-]);
+// Objects are stored as plain bytes. CloudFront compresses them for clients that
+// ask (infra/site.json: Compress on, a cache policy keyed on gzip and brotli), so a
+// client that sends no Accept-Encoding gets plain bytes. S3 cannot negotiate:
+// objects stored gzip-encoded went to every client as gzip.
 export function prepareObject(key, bytes) {
   if (
     key.startsWith('/') ||
@@ -57,17 +51,10 @@ export function prepareObject(key, bytes) {
   const type = mime[extension];
   if (!type) throw new Error(`No MIME type for ${key}`);
   const sha256 = createHash('sha256').update(bytes).digest('hex');
-  const object = {
+  return {
     Body: bytes,
     ContentType: type,
     CacheControl: cacheControl(key, extension),
     Metadata: { sha256 },
   };
-  // Text is stored gzip-encoded; the decoded bytes and their hash are what
-  // the manifest and the post-deploy comparison use.
-  if (compressible.has(extension)) {
-    object.Body = gzipSync(bytes, { level: 9 });
-    object.ContentEncoding = 'gzip';
-  }
-  return object;
 }
