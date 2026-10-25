@@ -46,11 +46,11 @@ const timeline = `${yearPath(year(drop.date))}#drop-${drop.id}`;
   description={`A POAP drop Jamie Thingelstad made: ${drop.name}, ${drop.date}. ${plural(drop.mints, 'token')} minted by ${plural(drop.collectors, 'person', 'people')}.`}
   image={rasterUrl(drop.id, 640)}
 >
-  <article class="item">
-    <div class="item-art">
+  <article class="detail">
+    <div class="detail-art">
       <Art drop={drop} large />
     </div>
-    <div class="item-text">
+    <div class="detail-text">
       <p class="kicker">
         Issued by Jamie
         {series && (
