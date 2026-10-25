@@ -19,7 +19,19 @@ MEDIA_PREFIXES = ("art/", "raster/")  # same as tools/delivery-plan.mjs
 # Class names microformats2 parsers take as classic microformat roots when a page has no
 # h-* root: `class="item"` made every drop and token page parse as an empty h-item
 # (open-web audit, 2026-10-25). The site has no microformats, so none may appear.
-LEGACY_ROOTS = {"adr", "geo", "hentry", "hfeed", "hnews", "hproduct", "hresume", "hreview", "item", "vcard", "vevent"}
+LEGACY_ROOTS = {
+    "adr",
+    "geo",
+    "hentry",
+    "hfeed",
+    "hnews",
+    "hproduct",
+    "hresume",
+    "hreview",
+    "item",
+    "vcard",
+    "vevent",
+}
 
 
 class Page(HTMLParser):
