@@ -40,11 +40,11 @@ const timeline = token.own_drop
   description={`A POAP Jamie Thingelstad collected: ${drop.name}, minted ${day(token.minted)}.`}
   image={rasterUrl(drop.id, 640)}
 >
-  <article class="item">
-    <div class="item-art">
+  <article class="detail">
+    <div class="detail-art">
       <Art drop={drop} large />
     </div>
-    <div class="item-text">
+    <div class="detail-text">
       <p class="kicker">
         {token.own_drop
           ? 'Collected from Jamie’s own drop'

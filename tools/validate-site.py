@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Validate the built site in dist/: routes, links, metadata, and published media.
 
-Every page needs a title, a canonical link and a main landmark. Every internal link must
-resolve to a built file. Every media URL must be a key in data/media.json (or, with
+Every page needs a title, a canonical link and a main landmark, and no class that
+microformats parsers read as a legacy root. Every internal link must resolve to a built file. Every media URL must be a key in data/media.json (or, with
 LOCAL_MEDIA=1, a file in media/). Media files must not be in the build.
 """
 
@@ -16,6 +16,10 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 MEDIA_PREFIXES = ("art/", "raster/")  # same as tools/delivery-plan.mjs
+# Class names microformats2 parsers take as classic microformat roots when a page has no
+# h-* root: `class="item"` made every drop and token page parse as an empty h-item
+# (open-web audit, 2026-10-25). The site has no microformats, so none may appear.
+LEGACY_ROOTS = {"adr", "geo", "hentry", "hfeed", "hnews", "hproduct", "hresume", "hreview", "item", "vcard", "vevent"}
 
 
 class Page(HTMLParser):
@@ -25,12 +29,14 @@ class Page(HTMLParser):
         self.title = False
         self.canonical = False
         self.main = False
+        self.classes = set()
 
     def handle_starttag(self, tag, attrs):
         data = dict(attrs)
         self.title |= tag == "title"
         self.main |= tag == "main"
         self.canonical |= tag == "link" and data.get("rel") == "canonical"
+        self.classes.update((data.get("class") or "").split())
         for key in ("href", "src", "data-src"):
             if data.get(key):
                 self.refs.append(data[key])
@@ -62,6 +68,8 @@ def main():
         ):
             if not flag:
                 problems.append(f"{rel}: no {name}")
+        for name in sorted(parser.classes & LEGACY_ROOTS):
+            problems.append(f"{rel}: class {name} parses as a legacy microformat")
         for ref in parser.refs:
             parts = urlsplit(ref)
             if (

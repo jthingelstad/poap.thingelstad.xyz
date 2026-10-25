@@ -617,7 +617,7 @@ details.group .card {
 }
 
 /* Drop and token pages */
-.item {
+.detail {
   display: grid;
   grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
   gap: 2rem;
@@ -630,7 +630,7 @@ details.group .card {
   object-fit: contain;
   background: transparent;
 }
-.item h1 {
+.detail h1 {
   overflow-wrap: anywhere;
 }
 .links {
@@ -674,10 +674,10 @@ details.group .card {
   font-size: 0.85rem;
 }
 @media (max-width: 760px) {
-  .item {
+  .detail {
     grid-template-columns: 1fr;
   }
-  .item-art {
+  .detail-art {
     max-width: 320px;
   }
 }
