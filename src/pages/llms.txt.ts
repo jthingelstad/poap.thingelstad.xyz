@@ -13,17 +13,20 @@ export const GET: APIRoute = () =>
       `Data: https://github.com/jthingelstad/poap-archive (captured ${meta.captured}).`,
       'Site: https://github.com/jthingelstad/poap.thingelstad.xyz',
       '',
+      // Prose belongs above the first heading: the llmstxt.org parser reads
+      // every line under a heading as a "- [name](url): notes" link.
+      'Each drop is at /drops/<id>/, each token at /tokens/<id>/, each collector at /people/<address>/, each series at /series/<slug>/.',
+      '',
       '## Pages',
       '',
       '- [Timeline](https://poap.thingelstad.xyz/timeline/): each year as tokens collected, drops issued, and writing, side by side',
       '- [Collected](https://poap.thingelstad.xyz/collected/): every token, by year; places, rarity, wallets',
       '- [Issued](https://poap.thingelstad.xyz/issued/): every drop, by series',
       '- [Network](https://poap.thingelstad.xyz/network/): drops and the people who collected them',
-      '- [Writing](https://poap.thingelstad.xyz/writing/): every post about POAP; [What Jamie told POAP](https://poap.thingelstad.xyz/writing/advice/)',
+      '- [Writing](https://poap.thingelstad.xyz/writing/): every post about POAP',
+      '- [What Jamie told POAP](https://poap.thingelstad.xyz/writing/advice/): twenty-five things Jamie asked POAP to build, 2021 to 2025, and what shipped',
       '- [POAP](https://poap.thingelstad.xyz/poap/): the company, 2019 to 2026, with sources',
       '- [About](https://poap.thingelstad.xyz/about/): the protocol, the data, the wallets',
-      '',
-      'Each drop is at /drops/<id>/, each token at /tokens/<id>/, each collector at /people/<address>/, each series at /series/<slug>/.',
     ].join('\n') + '\n',
     { headers: { 'content-type': 'text/plain; charset=utf-8' } },
   );

@@ -6,7 +6,10 @@ read it before changing structure, URLs or data.
 
 - Built with Astro and TypeScript on the nnxyz pattern (`jthingelstad/nnxyz`): S3 and
   CloudFront, GitHub Actions deploying main through OIDC, media published once and
-  write-once. `docs/deployment.md` has the operations.
+  write-once. `docs/deployment.md` has the operations. Deploys store pages and assets
+  as plain bytes and CloudFront compresses them for clients that ask, so a client
+  sending no Accept-Encoding gets plain text; never store objects gzip-encoded (they
+  went to every client as gzip until 2026-10-25).
 - **Data.** `data/` is the export from `poap-archive` (`scripts/export_site_data.py`), the
   only thing the site reads. Regenerate it there and copy it here; never edit it by hand.
   `data/export.json` records the archive commit. `npm run validate:data` checks the
@@ -23,6 +26,12 @@ read it before changing structure, URLs or data.
   animated) and `raster/` (WebP stills). Pages reference URLs; nothing under those
   prefixes is ever in `dist/`. `tools/validate-site.py` fails the build if a referenced
   key is not in `data/media.json`.
+- **No microformats.** `validate:site` also fails any page carrying a class that
+  microformats parsers read as a legacy root (`item`, `hentry`, `hreview-aggregate`,
+  `hrecipe` and the rest of its list), because such a page parses as an empty object.
+- **llms.txt** (`src/pages/llms.txt.ts`) is read by the llmstxt.org parser: prose only
+  above the first `##` heading, and every line under a heading exactly one
+  `- [name](url): notes` link. `validate:site` fails anything else.
 - **Tinylytics** (`design/tinylytics.md`): one script in the layout, production host
   only, kudos per drop keyed on `/drops/<id>/`. Never send live hits or kudos from QA.
 - **Prose is content.** Chapter titles and quotes, series descriptions and the closing
