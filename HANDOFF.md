@@ -2,10 +2,16 @@
 
 Written 2026-10-17 by the cloud session that bootstrapped this repository. Everything
 below needs something the cloud session does not have: the `cloud-engineer` AWS identity,
-the Mac's Photos library, or Jamie at the Namecheap console. Do these in order; each
+the Mac's Photos library, or a DNS change (then Jamie at the Namecheap console). Do these in order; each
 step says what it produces and what to commit. Read `AGENTS.md` and `docs/deployment.md`
 first, and `~/Projects/AGENTS.md` for the AWS rules (verify the STS identity before any
 mutation; infrastructure through reviewed change sets; never static keys in GitHub).
+
+DNS since 2026-10-27: `thingelstad.xyz` moved from Namecheap BasicDNS to Route 53. Every
+record, including `poap` and its ACM validation CNAME, is code in the `dns-thingelstad-xyz`
+stack (`config/dns-thingelstad-xyz-stack.yaml` in `projects-sysadmin`), changed by pull
+request and deploy. Namecheap is still the registrar but no longer serves the zone, so the
+Namecheap steps below are history; a rebuild adds its records to the zone stack.
 
 State when this was written: `main` has the bootstrap (data, tooling, infra templates, CI,
 layout, home and about). `infra/deployment.json` has nulls for the distribution,
@@ -22,8 +28,8 @@ cloud-engineer` must show account `999153317627` and
 - Show Jamie the `infra:plan` change sets and wait for an explicit go before `infra:apply`
   or `infra:attach`. Jamie's go names the action and target, e.g.
   `Approved: npm run infra:apply for poap.thingelstad.xyz`.
-- Give Jamie DNS records formatted for Namecheap, hosts relative to `thingelstad.xyz`, and
-  times in US Central.
+- DNS records go in the `thingelstad.xyz` zone stack by pull request, never in a console
+  or at Namecheap. Give Jamie times in US Central.
 - Checks never send live Tinylytics hits or kudos; browser checks against production block
   the Tinylytics host.
 
@@ -50,7 +56,7 @@ sets for those (fixed 2026-10-17, it used to ask for an UPDATE and fail).
 `poap-certificate` does not finish until the certificate is ISSUED, so `apply` stops at
 the first stack until the ACM validation CNAME is in DNS (the script waits 30 minutes).
 Read the record while it waits (`aws acm describe-certificate`, `DomainValidationOptions`)
-and give it to Jamie straight away. Run `apply` with a long enough timeout for the
+and add it to the zone stack straight away. Run `apply` with a long enough timeout for the
 distribution too (allow 45 minutes); if it is cut off, running it again is safe, because
 finished stacks report no changes and it carries on from there.
 
@@ -59,7 +65,7 @@ so the bucket policy admits CloudFront, rewrites `infra/deployment.json` from th
 stacks, and prints two DNS records and the deployment role ARN. Commit
 `infra/deployment.json`.
 
-Give Jamie the two records for Namecheap (hosts are relative to `thingelstad.xyz`):
+Add the two records to the `thingelstad.xyz` zone stack (hosts are relative to `thingelstad.xyz`):
 
 | Type  | Host                                | Target                             |
 | ----- | ----------------------------------- | ---------------------------------- |
