@@ -25,8 +25,11 @@ npm run infra:plan     # creates change sets for every stack and prints them
 npm run infra:apply    # executes them in order and prints the DNS records
 ```
 
-Add the two DNS records at Namecheap (hosts are relative to `thingelstad.xyz`): the ACM
-validation CNAME, kept for renewal, and `poap` → the CloudFront domain. When ACM shows
+Add the two DNS records to the `thingelstad.xyz` Route 53 zone stack
+(`config/dns-thingelstad-xyz-stack.yaml` in `projects-sysadmin`, by pull request and
+deploy; hosts are relative to `thingelstad.xyz`): the ACM validation CNAME, kept for
+renewal, and `poap` → the CloudFront domain. Both are there today. DNS moved from Namecheap
+BasicDNS to Route 53 on 2026-10-27; Namecheap is still the registrar. When ACM shows
 ISSUED:
 
 ```sh
