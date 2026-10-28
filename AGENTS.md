@@ -32,6 +32,10 @@ read it before changing structure, URLs or data.
 - **llms.txt** (`src/pages/llms.txt.ts`) is read by the llmstxt.org parser: prose only
   above the first `##` heading, and every line under a heading exactly one
   `- [name](url): notes` link. `validate:site` fails anything else.
+- **Sitemap dates** (2026-10-28, `tools/content-date.mjs`): every sitemap URL and the
+  index carry the date of the last commit to `data/` or `content/`, the archive's content;
+  template changes and builds do not move it. CI checks out full history for it and a
+  shallow clone refuses to build. `validate:site` fails a URL without a valid lastmod.
 - **Tinylytics** (`design/tinylytics.md`): one script in the layout, production host
   only, kudos per drop keyed on `/drops/<id>/`. Never send live hits or kudos from QA.
 - **Prose is content.** Chapter titles and quotes, series descriptions and the closing
