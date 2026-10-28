@@ -10,7 +10,7 @@ main by GitHub Actions through an OIDC role that cannot write media or change in
 | ------------------ | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `poap-certificate` | `infra/certificate.json` | ACM certificate for `poap.thingelstad.xyz`, DNS validated                                                                                                     |
 | `poap-storage`     | `infra/storage.json`     | `poap-storage-archive-…` (private, every version kept) and `poap-storage-web-…` (private, CloudFront reads it)                                                |
-| `poap-site`        | `infra/site.json`        | Distribution with origin access control, cache and header policies, index function, 14-day access log without client addresses, 5xx alarm to the family topic |
+| `poap-site`        | `infra/site.json`        | Distribution with origin access control, cache and header policies, index function, 24-month access log without client addresses, 5xx alarm to the family topic |
 | `poap-delivery`    | `infra/delivery.json`    | GitHub OIDC roles: read-only build, main-only deployment denied `PutObject` under `art/` and `raster/`                                                        |
 
 Live ids and ARNs are in `infra/deployment.json`; `tools/bootstrap-infra.mjs` writes them.
