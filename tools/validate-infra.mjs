@@ -77,7 +77,7 @@ assert.ok(
   !accessLog.some((field) => /^c-ip|x-forwarded-for|cs\(Cookie\)/.test(field)),
   'The access log records no client addresses or cookies',
 );
-assert.equal(site.Resources.AccessLogGroup.Properties.RetentionInDays, 14);
+assert.equal(site.Resources.AccessLogGroup.Properties.RetentionInDays, 731);
 const alarm = site.Resources.Distribution5xxAlarm.Properties;
 assert.equal(alarm.MetricName, '5xxErrorRate');
 assert.match(

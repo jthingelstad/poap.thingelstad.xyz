@@ -201,7 +201,7 @@
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
         "LogGroupName": "/poap/web-access",
-        "RetentionInDays": 14
+        "RetentionInDays": 731
       }
     },
     "AccessLogSource": {
@@ -303,7 +303,7 @@
       "Value": {
         "Ref": "AccessLogGroup"
       },
-      "Description": "CloudFront access log, 14 days, no client IPs"
+      "Description": "CloudFront access log, 24 months, no client IPs"
     }
   }
 }
