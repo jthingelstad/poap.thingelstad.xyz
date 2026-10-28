@@ -4,9 +4,12 @@
 Every page needs a title, a canonical link and a main landmark, and no class that
 microformats parsers read as a legacy root. Every internal link must resolve to a built file. Every media URL must be a key in data/media.json (or, with
 LOCAL_MEDIA=1, a file in media/). Media files must not be in the build. llms.txt must
-be in the shape the llmstxt.org reference parser reads.
+be in the shape the llmstxt.org reference parser reads. The sitemap index and every
+sitemap URL carry a W3C lastmod (tools/content-date.mjs), never in the future, and
+every sitemap URL is a built page.
 """
 
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 import json
 import os
@@ -88,6 +91,38 @@ class Page(HTMLParser):
                 self.refs.append(candidate.split()[0])
 
 
+W3C_INSTANT = re.compile(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d{3})?Z")
+
+
+def sitemap_problems():
+    """Every sitemap URL is a built page with a valid lastmod; the index's too."""
+    problems = []
+    index = DIST / "sitemap-index.xml"
+    if not index.exists():
+        return ["no sitemap-index.xml"]
+    now = datetime.now(timezone.utc)
+    site = "https://poap.thingelstad.xyz/"
+
+    def check(entry, kind):
+        loc = re.search(r"<loc>([^<]+)</loc>", entry)
+        stamp = re.search(r"<lastmod>([^<]+)</lastmod>", entry)
+        where = loc[1] if loc else entry[:80]
+        if not stamp or not W3C_INSTANT.fullmatch(stamp[1]):
+            problems.append(f"{kind} {where} has no valid lastmod")
+        elif datetime.fromisoformat(stamp[1].replace("Z", "+00:00")) > now:
+            problems.append(f"{kind} {where} has a future lastmod")
+        return loc[1] if loc else ""
+
+    for entry in re.findall(r"<sitemap>(.*?)</sitemap>", index.read_text(), re.S):
+        child = check(entry, "sitemap")
+        text = (DIST / child.removeprefix(site)).read_text()
+        for url in re.findall(r"<url>(.*?)</url>", text, re.S):
+            loc = check(url, "sitemap URL")
+            if not (DIST / loc.removeprefix(site) / "index.html").exists() and loc != site:
+                problems.append(f"sitemap URL {loc} is not a built page")
+    return problems
+
+
 def main():
     local = os.environ.get("LOCAL_MEDIA") == "1"
     published = set(json.loads((ROOT / "data/media.json").read_text())["objects"])
@@ -100,6 +135,7 @@ def main():
             sys.exit(f"Media in the build: {rel}")
     llms = DIST / "llms.txt"
     problems = llms_problems(llms.read_text()) if llms.exists() else ["no llms.txt"]
+    problems += sitemap_problems()
     media_refs = set()
     for page in pages:
         parser = Page()
@@ -147,7 +183,7 @@ def main():
             + (f"\n... {len(problems)} problems" if len(problems) > 40 else "")
         )
     print(
-        f"{len(pages)} pages, {len(media_refs)} media references, links, metadata and llms.txt valid"
+        f"{len(pages)} pages, {len(media_refs)} media references, links, metadata, sitemap lastmods and llms.txt valid"
     )
 
 

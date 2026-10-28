@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import deployment from './infra/deployment.json' with { type: 'json' };
 import { mediaPrefixes } from './tools/delivery-plan.mjs';
 import { localMedia } from './tools/local-media.mjs';
+import { contentDate } from './tools/content-date.mjs';
 
 const site = 'https://poap.thingelstad.xyz';
 
@@ -24,5 +25,7 @@ export default defineConfig({
   trailingSlash: 'always',
   devToolbar: { enabled: false },
   vite: { server: { proxy } },
-  integrations: [sitemap(), localMedia()],
+  // Every page carries the date the archive's content last changed
+  // (tools/content-date.mjs), and the index the same.
+  integrations: [sitemap({ lastmod: contentDate() }), localMedia()],
 });
