@@ -50,6 +50,7 @@ read it before changing structure, URLs or data.
   `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`.
 - Infrastructure changes go through reviewed CloudFormation change sets with the
   `cloud-engineer` identity, never through the delivery role. DNS changes are made by
-  Jamie.
+  Jamie. The `poap-site` distribution uses the shared `edge` web ACL (projects-sysadmin
+  `edge-waf` stack; rules count only until tuned).
 - "POAP KINGS" is a Clash Royale clan, unrelated to the protocol; its tokens are real
   POAPs and appear as such.
