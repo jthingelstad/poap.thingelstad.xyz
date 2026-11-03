@@ -22,6 +22,5 @@
     "Repository": "jthingelstad/poap.thingelstad.xyz",
     "ManagedBy": "cloudformation",
     "Environment": "production"
-  },
-  "alarmTopic": "arn:aws:sns:us-east-1:999153317627:weekly-thing-librarian-alarms"
+  }
 }
