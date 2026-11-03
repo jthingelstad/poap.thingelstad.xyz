@@ -15,7 +15,6 @@ import path from 'node:path';
 import { createHash } from 'node:crypto';
 import {
   isMediaKey,
-  mediaPrefixes,
   publicationOrder,
   prepareObject,
 } from './delivery-plan.mjs';
@@ -89,7 +88,6 @@ if (media.length)
   throw new Error(`Media in the site build: ${media.slice(0, 5).join(', ')}`);
 let uploaded = 0,
   unchanged = 0;
-const replaced = [];
 async function upload(key) {
   const object = prepareObject(key, await fs.readFile(path.join('dist', key)));
   if (existing.has(key)) {
@@ -109,7 +107,6 @@ async function upload(key) {
   await s3.send(
     new PutObjectCommand({ Bucket: config.siteBucket, Key: key, ...object }),
   );
-  if (existing.has(key)) replaced.push(key);
   uploaded++;
 }
 // Complete assets and scripts before replacing pages. Retain old assets.
@@ -126,37 +123,16 @@ for (const group of [
   );
 }
 await upload('revision.json');
-// Refresh pages, never media: wildcards for folders that hold only pages.
-const mediaFolders = new Set(
-  mediaPrefixes.map((prefix) => prefix.split('/')[0]),
-);
-const paths = [
-  ...new Set([
-    ...ordered
-      .filter((key) => !key.startsWith('_astro/'))
-      .flatMap((key) => {
-        const [folder] = key.split('/');
-        if (folder === key)
-          return key === 'index.html' ? ['/', `/${key}`] : [`/${key}`];
-        if (!mediaFolders.has(folder)) return [`/${folder}/*`];
-        return key.endsWith('/index.html')
-          ? [`/${key.slice(0, -'index.html'.length)}`, `/${key}`]
-          : [`/${key}`];
-      }),
-    // Hashed bundles keep their bytes; one replaced in place had its headers
-    // change (as when objects stopped being stored gzip-encoded), so its
-    // cached copies go too.
-    ...replaced
-      .filter((key) => key.startsWith('_astro/'))
-      .map((key) => `/${key}`),
-  ]),
-];
+// One wildcard path per deploy: CloudFront bills invalidations per path, and
+// "/*" counts as one. It also covers a hashed bundle replaced in place (a
+// header change). Published media is write-once, so refreshing it from S3
+// changes nothing a visitor sees.
 const invalidation = await cdn.send(
   new CreateInvalidationCommand({
     DistributionId: config.distributionId,
     InvalidationBatch: {
       CallerReference: `${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_ATTEMPT}`,
-      Paths: { Quantity: paths.length, Items: paths },
+      Paths: { Quantity: 1, Items: ['/*'] },
     },
   }),
 );

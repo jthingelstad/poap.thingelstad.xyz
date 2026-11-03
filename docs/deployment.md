@@ -57,10 +57,11 @@ local `media/` folder before that.
 `.github/workflows/ci.yml`: lint, format, types, tests, Ruff, audit, cfn-lint, infrastructure
 and data validation; CodeQL; a credential-free build with link, metadata and published-media
 checks and Chromium checks at desktop and phone widths; then, on main, the deployment job
-uploads changed pages, invalidates page paths and compares delivered bytes with the build.
-Media is never uploaded by a deploy. Objects are stored uncompressed and the distribution
-compresses them (gzip or brotli) only for clients that send Accept-Encoding; a hashed
-bundle under `_astro/` replaced in place (a header change) is invalidated too.
+uploads changed pages, invalidates the distribution with one wildcard path (`/*`) and
+compares delivered bytes with the build. CloudFront bills invalidations per path and `/*`
+counts as one; published media is write-once, so refreshing it changes nothing. Media is
+never uploaded by a deploy. Objects are stored uncompressed and the distribution
+compresses them (gzip or brotli) only for clients that send Accept-Encoding.
 
 ## DNS
 
