@@ -78,11 +78,13 @@ assert.ok(
   'The access log records no client addresses or cookies',
 );
 assert.equal(site.Resources.AccessLogGroup.Properties.RetentionInDays, 731);
-const alarm = site.Resources.Distribution5xxAlarm.Properties;
-assert.equal(alarm.MetricName, '5xxErrorRate');
-assert.match(
-  alarm.AlarmActions[0]['Fn::Sub'],
-  /:weekly-thing-librarian-alarms$/,
+// No CloudWatch alarm since November 3, 2026 (Jamie kept a handful
+// account-wide, none here).
+assert.deepEqual(
+  Object.values(site.Resources).filter(
+    (r) => r.Type === 'AWS::CloudWatch::Alarm',
+  ),
+  [],
 );
 for (const [name, allowed] of [
   ['BuildRole', ['s3:GetObject']],
