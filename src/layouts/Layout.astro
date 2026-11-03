@@ -107,9 +107,9 @@ const analytics =
     {analytics && <script is:inline>
       if (location.hostname === 'poap.thingelstad.xyz') {
         const script = document.createElement('script');
-        script.src =
-          'https://tinylytics.app/embed/nQYJ5URe6Y3umkYW7HQN.js?kudos=custom';
         script.defer = true;
+        script.src = 'https://tinylytics.app/js/script.js';
+        script.dataset.site = 'nQYJ5URe6Y3umkYW7HQN';
         document.body.append(script);
       }
     </script>}
