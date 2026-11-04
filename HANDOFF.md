@@ -23,7 +23,7 @@ until the repository variable `AWS_DEPLOY_ROLE_ARN` exists.
 - Use Node 24, as `.nvmrc` and CI do: `export PATH="/opt/homebrew/opt/node@24/bin:$PATH"`.
   The Mac's default `node` is newer.
 - Verify the identity before any mutation: `aws sts get-caller-identity --profile
-cloud-engineer` must show account `999153317627` and
+cloud-engineer` must show account `<account>` and
   `assumed-role/ProjectsCloudEngineer/projects-cloud-engineer`. Never the `jamie` profile.
 - Show Jamie the `infra:plan` change sets and wait for an explicit go before `infra:apply`
   or `infra:attach`. Jamie's go names the action and target, e.g.
@@ -127,7 +127,7 @@ tar -czf /tmp/poap-export.tar.gz -C /tmp/poap-export .
 shasum -a 256 /tmp/poap-export.tar.gz
 ```
 
-Upload to `s3://poap-storage-archive-999153317627/datasets/<sha256>/export.tar.gz` with
+Upload to `s3://poap-storage-archive-<account>/datasets/<sha256>/export.tar.gz` with
 `If-None-Match: *` (the AWS MCP presigned upload, as nnxyz does), and record bucket, key
 and hash in `infra/dataset.json` in the site repo.
 

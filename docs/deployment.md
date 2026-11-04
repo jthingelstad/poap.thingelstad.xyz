@@ -4,7 +4,7 @@ The pattern is nnxyz's (`jthingelstad/nnxyz`): a private, versioned archive buck
 web bucket read only by CloudFront; media published once and write-once; pages deployed from
 main by GitHub Actions through an OIDC role that cannot write media or change infrastructure.
 
-## Stacks (us-east-1, account 999153317627)
+## Stacks (us-east-1, account `<account>`)
 
 | Stack              | Template                 | Holds                                                                                                                                                           |
 | ------------------ | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
