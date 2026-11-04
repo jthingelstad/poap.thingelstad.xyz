@@ -23,7 +23,7 @@ until the repository variable `AWS_DEPLOY_ROLE_ARN` exists.
 - Use Node 24, as `.nvmrc` and CI do: `export PATH="/opt/homebrew/opt/node@24/bin:$PATH"`.
   The Mac's default `node` is newer.
 - Verify the identity before any mutation: `aws sts get-caller-identity --profile
-cloud-engineer` must show account ``<account>`` and
+cloud-engineer` must show account `<account>` and
   `assumed-role/ProjectsCloudEngineer/projects-cloud-engineer`. Never the `jamie` profile.
 - Show Jamie the `infra:plan` change sets and wait for an explicit go before `infra:apply`
   or `infra:attach`. Jamie's go names the action and target, e.g.
